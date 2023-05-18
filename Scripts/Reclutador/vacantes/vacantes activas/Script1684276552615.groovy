@@ -50,6 +50,7 @@ println(RN)
 
 aleatoreo()
 println(rn)
+
 GlobalVariable.vacantId = vacantId[rn]
 println(GlobalVariable.vacantId)
 

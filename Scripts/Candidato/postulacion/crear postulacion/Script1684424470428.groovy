@@ -22,13 +22,17 @@ import com.kms.katalon.core.testobject.ResponseObject as ResponseObject
 
 WebUI.callTestCase(findTestCase('Candidato/login/loginCand'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Reclutador/crear vacante/9.- publicar'), [:], FailureHandling.STOP_ON_FAILURE)
+statusCode = 0
 
+while (statusCode !=200) {
+	WebUI.callTestCase(findTestCase('Reclutador/vacantes/vacantes activas'), [:], FailureHandling.STOP_ON_FAILURE)
 response = WS.sendRequest(findTestObject('candidato/postulacion/postulacion 1'))
 
 statusCode = WS.getResponseStatusCode(response)
 
 println(statusCode)
+
+}
 
 WS.verifyResponseStatusCode(response, 200)
 
@@ -108,7 +112,7 @@ println(statusCode)
 
 WS.verifyResponseStatusCode(response, 200)
 
-response = WS.sendRequest(findTestObject('candidato/postulacion/finalista'))
+response = WS.sendRequest(findTestObject('Reclutador/postulacion/finalista'))
 
 statusCode = WS.getResponseStatusCode(response)
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>14.- sueldo</name>
+   <name>18.- Educacion</name>
    <tag></tag>
-   <elementGuidId>1a137551-add8-438e-b35f-8e20f53f51af</elementGuidId>
+   <elementGuidId>28a3c9a2-144d-4e0c-998d-38e957e0942f</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <authorizationRequest>
@@ -19,7 +19,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;[\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/steepsOnboarding\&quot;,\n        \&quot;value\&quot;: \&quot;11\&quot;\n    },\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/desiredSalary\&quot;,\n        \&quot;value\&quot;: \&quot;${salario}\&quot;\n    }\n]&quot;,
+  &quot;text&quot;: &quot;[\n    {\n        \&quot;academicStatus\&quot;: {\n            \&quot;idStatus\&quot;: \&quot;402880de79730a2c0179731b7c1b0003\&quot;\n        },\n        \&quot;educationLevel\&quot;: {\n            \&quot;educationId\&quot;: \&quot;${GlobalVariable.NivelAcademico}\&quot;,\n            \&quot;level\&quot;: 6\n        },\n        \&quot;countryInstitute\&quot;: \&quot;México\&quot;,\n        \&quot;degree\&quot;: \&quot;ingenieria\&quot;,\n        \&quot;instituteName\&quot;: \&quot;politecnico\&quot;,\n        \&quot;startYear\&quot;: \&quot;2000\&quot;,\n        \&quot;endYear\&quot;: \&quot;2000\&quot;\n    }\n]&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -30,7 +30,7 @@
       <name>Content-Type</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>cb8f135f-546b-46b0-ba42-5988ebc8ee0e</webElementGuid>
+      <webElementGuid>8d7e5de9-9b44-4c1f-bbba-6f3c3d30c4b6</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -38,13 +38,13 @@
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${GlobalVariable.TokenCand}</value>
-      <webElementGuid>a588986d-a527-416a-ac99-cbf7294f90f7</webElementGuid>
+      <webElementGuid>abfa25cf-1870-4e8c-8994-eee05b9f30bf</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.5.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>PATCH</restRequestMethod>
-   <restUrl>https://${url}.micros.involverh.com.mx/candidate/candidate</restUrl>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>https://${url}.micros.involverh.com.mx/candidate/candidate/education</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -56,16 +56,9 @@
    <variables>
       <defaultValue>GlobalVariable.url</defaultValue>
       <description></description>
-      <id>c71cb70f-dd65-4095-8d52-07dec1244043</id>
+      <id>d238ab42-0798-49e3-81dc-9a79ed452077</id>
       <masked>false</masked>
       <name>url</name>
-   </variables>
-   <variables>
-      <defaultValue>GlobalVariable.SalarioDeseado</defaultValue>
-      <description></description>
-      <id>8f229814-260d-4a53-9e43-cd00661705da</id>
-      <masked>false</masked>
-      <name>salario</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

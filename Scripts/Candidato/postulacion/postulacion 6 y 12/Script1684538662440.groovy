@@ -15,7 +15,7 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Reclutador/crear vacante/9.- publicar'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Reclutador/vacantes/vacantes activas'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Candidato/postulacion/crear postulacion Aforo'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -60,6 +60,10 @@ WebUI.takeScreenshot('/Users/huguito/Desktop/notificaciones/Reclutador/sextaPost
 WebUI.delay(5)
 
 WebUI.closeBrowser()
+
+WebUI.delay(1)
+
+WebUI.callTestCase(findTestCase('Candidato/postulacion/crear postulacion Aforo'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(1)
 

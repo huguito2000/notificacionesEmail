@@ -23,15 +23,36 @@ import com.kms.katalon.core.testobject.ResponseObject as ResponseObject
 WebUI.callTestCase(findTestCase('Candidato/login/loginCand'), [:], FailureHandling.STOP_ON_FAILURE)
 
 statusCode = 0
+experiencia = 0
 
-while (statusCode !=200) {
-	WebUI.callTestCase(findTestCase('Reclutador/vacantes/vacantes activas'), [:], FailureHandling.STOP_ON_FAILURE)
+experiencia= ["SIN_EXPERIENCIA","BASICO","AVANZADO","EXPERTO"]
+
+Random rand = new Random()
+
+int ranlist = rand.nextInt(experiencia.size())
+
+GlobalVariable.habilidad_dura = experiencia.get(ranlist)
+
+println(GlobalVariable.habilidad_dura)
+
+WebUI.callTestCase(findTestCase('Reclutador/vacantes/vacantes activas'), [:], FailureHandling.STOP_ON_FAILURE)
+
 response = WS.sendRequest(findTestObject('candidato/postulacion/postulacion 1'))
 
 statusCode = WS.getResponseStatusCode(response)
 
 println(statusCode)
 
+while (statusCode !=200) {
+	
+WebUI.callTestCase(findTestCase('Reclutador/vacantes/vacantes activas'), [:], FailureHandling.STOP_ON_FAILURE)
+response = WS.sendRequest(findTestObject('candidato/postulacion/postulacion 1'))
+
+statusCode = WS.getResponseStatusCode(response)
+
+println(statusCode)
+
+WebUI.delay(5)
 }
 
 WS.verifyResponseStatusCode(response, 200)
@@ -75,6 +96,11 @@ GlobalVariable.questionId1 = (codigo[1])
 println(codigo[2])
 
 GlobalVariable.questionId2 = (codigo[2])
+
+experiencia()
+experiencia = experiencia +1 as int
+GlobalVariable.experiencia = experiencia
+println("estos son los años " + GlobalVariable.experiencia)
 
 response = WS.sendRequest(findTestObject('candidato/postulacion/postulacion 2'))
 
@@ -133,4 +159,8 @@ WebUI.takeScreenshot('/Users/huguito/Desktop/notificaciones/Candidato/finalista.
 WebUI.delay(3)
 
 WebUI.closeBrowser()
+
+def experiencia() {
+	experiencia= ((Math.random() * 60) as int)
+	}
 

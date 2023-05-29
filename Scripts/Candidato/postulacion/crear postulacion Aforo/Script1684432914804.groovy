@@ -21,12 +21,18 @@ import groovy.json.JsonSlurper as JsonSlurper
 import com.kms.katalon.core.testobject.ResponseObject as ResponseObject
 
 WebUI.callTestCase(findTestCase('Candidato/Registro/formulario 2'), [:], FailureHandling.STOP_ON_FAILURE)
+println("el nivel de experiencia es")
+nivelExperiencia()
 
 response = WS.sendRequest(findTestObject('candidato/postulacion/postulacion 1'))
 
 statusCode = WS.getResponseStatusCode(response)
 
 println(statusCode)
+
+responseText = response.getResponseText()
+
+println(responseText)
 
 WS.verifyResponseStatusCode(response, 200)
 
@@ -70,17 +76,25 @@ println(codigo[2])
 
 GlobalVariable.questionId2 = (codigo[2])
 
+experiencia()
+
+experiencia = experiencia +1 as int
+
+GlobalVariable.experiencia = experiencia
+
+println("estos son los años " + GlobalVariable.experiencia)
+
 response = WS.sendRequest(findTestObject('candidato/postulacion/postulacion 2'))
 
 statusCode = WS.getResponseStatusCode(response)
 
 println(statusCode)
 
-WS.verifyResponseStatusCode(response, 200)
-
 responseText = response.getResponseText()
 
 println(responseText)
+
+WS.verifyResponseStatusCode(response, 200)
 
 response = WS.sendRequest(findTestObject('candidato/postulacion/postulacion 3'))
 
@@ -98,3 +112,23 @@ responseText = response.getResponseText()
 
 println(responseText)
 
+
+def experiencia() {
+	experiencia= ((Math.random() * 60) as int)
+	}
+	
+def nivelExperiencia() {
+	
+	experiencia= ["SIN_EXPERIENCIA","BASICO","AVANZADO","EXPERTO"]
+	
+	Random rand = new Random()
+	
+	int ranlist = rand.nextInt(experiencia.size())
+	
+	GlobalVariable.habilidad_dura = experiencia.get(ranlist)
+	
+	println(GlobalVariable.habilidad_dura)
+	
+}
+	
+	

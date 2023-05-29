@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>14.- sueldo</name>
+   <name>invitacion a otra vacante</name>
    <tag></tag>
-   <elementGuidId>1a137551-add8-438e-b35f-8e20f53f51af</elementGuidId>
+   <elementGuidId>8a963ad4-372a-47d6-b9c5-745a7e98c8ea</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <authorizationRequest>
       <authorizationInfo>
          <entry>
             <key>bearerToken</key>
-            <value>${GlobalVariable.TokenCand}</value>
+            <value>${GlobalVariable.TokenReclu}</value>
          </entry>
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
@@ -19,7 +19,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;[\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/steepsOnboarding\&quot;,\n        \&quot;value\&quot;: \&quot;11\&quot;\n    },\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/desiredSalary\&quot;,\n        \&quot;value\&quot;: \&quot;${salario}\&quot;\n    }\n]&quot;,
+  &quot;text&quot;: &quot;[\n    \&quot;${postulacionId}\&quot;\n]&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -30,21 +30,21 @@
       <name>Content-Type</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>cb8f135f-546b-46b0-ba42-5988ebc8ee0e</webElementGuid>
+      <webElementGuid>d25fcdfe-7e2b-4532-a50f-a2e99a7e078d</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
-      <value>Bearer ${GlobalVariable.TokenCand}</value>
-      <webElementGuid>a588986d-a527-416a-ac99-cbf7294f90f7</webElementGuid>
+      <value>Bearer ${GlobalVariable.TokenReclu}</value>
+      <webElementGuid>20d2059e-1dad-412e-b008-76ecec37f317</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.5.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>PATCH</restRequestMethod>
-   <restUrl>https://${url}.micros.involverh.com.mx/candidate/candidate</restUrl>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>https://pre.micros.involverh.com.mx/recruiter/selection-process/invitation?vacantId=${GlobalVariable.vacanteid}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -54,18 +54,11 @@
    <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>GlobalVariable.url</defaultValue>
+      <defaultValue>GlobalVariable.postulacionId</defaultValue>
       <description></description>
-      <id>c71cb70f-dd65-4095-8d52-07dec1244043</id>
+      <id>b7ee3645-c57c-4dd2-8c3e-d47e162b3917</id>
       <masked>false</masked>
-      <name>url</name>
-   </variables>
-   <variables>
-      <defaultValue>GlobalVariable.SalarioDeseado</defaultValue>
-      <description></description>
-      <id>8f229814-260d-4a53-9e43-cd00661705da</id>
-      <masked>false</masked>
-      <name>salario</name>
+      <name>postulacionId</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

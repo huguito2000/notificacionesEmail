@@ -19,7 +19,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;[\n    {\n        \&quot;question\&quot;: {\n            \&quot;questionId\&quot;: \&quot;2c9f936488202b9f0188215bbce800da\&quot;\n        },\n        \&quot;binaryAnswer\&quot;: null,\n        \&quot;levelHardSkill\&quot;: \&quot;INTERMEDIO\&quot;,\n        \&quot;openAnswer\&quot;: null,\n        \&quot;yearsExperienceAnswer\&quot;: null\n    }\n]&quot;,
+  &quot;text&quot;: &quot;[\n    {\n        \&quot;question\&quot;: {\n            \&quot;questionId\&quot;: \&quot;2c9f936488202b9f0188215bbce800da\&quot;\n        },\n        \&quot;binaryAnswer\&quot;: null,\n        \&quot;levelHardSkill\&quot;: \&quot;${GlobalVariable.habilidad_dura}\&quot;,\n        \&quot;openAnswer\&quot;: null,\n        \&quot;yearsExperienceAnswer\&quot;: null\n    }\n]&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -59,6 +59,13 @@
       <id>17c7e262-a690-4d1e-b254-979b9b3a9a2d</id>
       <masked>false</masked>
       <name>url</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.habilidad_dura</defaultValue>
+      <description></description>
+      <id>90691038-abde-4c56-8029-91b8b58f3a94</id>
+      <masked>false</masked>
+      <name>habilidad_dura</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

@@ -19,7 +19,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;[\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/steepsOnboarding\&quot;,\n        \&quot;value\&quot;: \&quot;2\&quot;\n    },\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/dateBirth\&quot;,\n        \&quot;value\&quot;: \&quot;2000-12-12\&quot;\n    }\n]&quot;,
+  &quot;text&quot;: &quot;[\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/steepsOnboarding\&quot;,\n        \&quot;value\&quot;: \&quot;2\&quot;\n    },\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/dateBirth\&quot;,\n        \&quot;value\&quot;: \&quot;${fecha}\&quot;\n    }\n]&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -59,6 +59,13 @@
       <id>af7f0995-16b5-43f1-a667-123470520142</id>
       <masked>false</masked>
       <name>url</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.fecha</defaultValue>
+      <description></description>
+      <id>af882539-7724-46ba-a0f1-dda7d708e0b5</id>
+      <masked>false</masked>
+      <name>fecha</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

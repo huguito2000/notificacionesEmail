@@ -40,7 +40,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://${url}.micros.involverh.com.mx/candidate/candidate/postulation?vacantId=${GlobalVariable.vacantId}</restUrl>
+   <restUrl>https://${url}.micros.involverh.com.mx/candidate/candidate/postulation?vacantId=${vacantId}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -55,6 +55,13 @@
       <id>a9f23ef3-aad9-4bc2-9d78-71430ae5bb99</id>
       <masked>false</masked>
       <name>url</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.vacantId</defaultValue>
+      <description></description>
+      <id>3ddba1d8-18a7-42e3-a779-d3b24ae82a87</id>
+      <masked>false</masked>
+      <name>vacantId</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

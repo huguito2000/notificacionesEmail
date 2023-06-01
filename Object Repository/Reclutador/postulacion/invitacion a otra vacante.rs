@@ -19,7 +19,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;[\n    \&quot;${postulacionId}\&quot;\n]&quot;,
+  &quot;text&quot;: &quot;[\n    \&quot;${GlobalVariable.postulacionId}\&quot;\n]&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>

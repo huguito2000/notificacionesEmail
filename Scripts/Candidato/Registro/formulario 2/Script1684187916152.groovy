@@ -184,26 +184,17 @@ def Salario() {
 	
 	def puestos() {
 	
-		puesto = ['Administración y gestión de empresas', 'Contabilidad y fiscalización', 'Finanzas", "banca y seguros', 'Negocios y administración, programas multidisciplinarios o generales'
-			, 'Negocios y comercio', 'Ciencias políticas', 'Economía', 'Psicología', 'Sociología y antropología', 'Trabajo y atención social'
-			, 'Ciencias de la información', 'Comunicación y periodismo', 'Criminología', 'Derecho', 'Ingeniería, manufactura y construcción'
-			, 'Arquitectura y construcción', 'Arquitectura y urbanismo', 'Construcción e ingeniería civil', 'Ingeniería industrial'
+		puesto = ['administrador', 'Contador', 'financiero", "asegurador', 'administrador de negocios', 'programas multidisciplinarios o generales'
+			, 'Operador comercial de transporte público', 'Mecánico de vehículos ligeros', 'Mecánico de motocicletas', 'psicologo', 'Sociologo',  'antropologo', 
+			, 'periodista', 'Criminologo', 'Abogado', 'Ingeniero', 'manufacturero', 'Arquitecto', 'Arquitecto de urbanismo', 'ingeniero civil', 'Ingeniero industrial'
 			, 'mecánica', 'electrónica', 'tecnología', 'Electricidad', 'generación de energía', 'Electrónica', 'automatización', 'Ingeniería de vehículos de motor'
-			, 'Ingeniería barcos', 'Ingeniería aeronaves', 'Ingeniería mecánica', 'Ingeniería electrónica', 'Ingeniería tecnología'
-			, 'programas multidisciplinarios o generales', 'Ingeniería mecánica ', 'Ingeniería metalurgia', 'Ingeniería química'
-			, 'Tecnología y protección del medio ambiente', 'Tecnologías de la información y comunicación', 'Manufacturas y procesos'
-			, 'Industria de la alimentación', 'Manufacturas ', 'programas multidisciplinarios', 'Minería y extracción', 'Educación'
-			, 'Formación docente', 'Bellas artes', 'Formación docente para educación básica, nivel preescolar', 'Formación docente para educación básica, nivel primaria'
-			, 'Formación docente para educación básica, nivel secundaria', 'Formación docente para educación física, artística o tecnológica'
-			, 'Formación docente para la enseñanza de asignaturas específicas', 'Formación docente para otros servicios educativos'
-			, 'Formación docente, programas multidisciplinarios o generales', 'Educación', 'Ciencias de la educación', 'Didáctica, pedagogía y currículo'
-			, 'Orientación y asesoría educativa', 'Ciencias exactas de la computación', 'Ciencias naturales', 'Biología y bioquímica'
-			, 'Ciencias ambientales', 'Ciencias de la computación', 'Ciencias físicas', 'Ciencias químicas', 'Ciencias de la tierra'
-			, 'Ciencias de la atmósfera', 'Física', 'Química', 'Matemáticas', 'estadística', 'Servicios personales', 'Deportes', 'Servicios de transporte'
-			, 'humanidades', 'Artes', 'Diseño', 'Música', 'artes escénicas', 'Técnicas audiovisuales', 'producción de medios', 'Filosofía'
-			, 'ética', 'Historia ', 'arqueologia', 'Lenguas extranjeras', 'Literatura', 'Salud', 'Enfermería y cuidados', 'Estomatología '
-			, 'odontología', 'Medicina', 'Salud pública', 'Terapia y rehabilitación', 'Agronomía', 'veterinaria', 'silvicultura'
-			, 'pesca', 'ganaderia']
+			, 'Ingeniero de aeronaves', 'Ingeniero  de mecánica', 'Ingeniero electrónica', 'Ingeniero de tecnología', 'odontologo', 'Medico', 'Agronomo', 'veterinaro'
+			, 'Ingeniería mecánica ', 'Ingeniería metalurgia', 'Ingeniería química', 'Filosofo','Historiador', 'Físico', 'Químico', 'Matemático', 'estadístico'
+			, 'Docente', 'Docente para educación básica', 'Docente nivel preescolar', 'Biologo',  'bioquímico'
+			, 'pescador', 'ganadero',"Maquinista naval","Astrónomo","Biotecnólogo","Químico industrial","Ingeniero bioquímico", "Ingeniero nuclear","Toxicólogo"
+			, "Creativo publicitario","Operador de cámara","Community manager","Documentalista de radio y televisión","Presentador de radio y televisión"
+			, "Vigilante de seguridad","Instructor de fitness", "Profesor de yoga", "Nutricionista", "Terapeuta deportivo", "Diseñador de páginas web"
+			, "Asistente de diseñador", "Diseñador de moda", "Diseñador gráfico", "Técnico en reprografía", "Rotulista" ]
 	
 	
 		Random rand = new Random()

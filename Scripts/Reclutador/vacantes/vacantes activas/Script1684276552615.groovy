@@ -56,15 +56,7 @@ vacantId = []
 	println(rn)
 	GlobalVariable.vacantId = vacantId[rn]
 	println(GlobalVariable.vacantId)
-while (vacantId[rn] == null) {
-	aleatoreo()
-	println(rn)
-	
-	GlobalVariable.vacantId = vacantId[rn]
-	println(GlobalVariable.vacantId)
-	
-	WS.verifyResponseStatusCode(response, 200)
-}	
+
 	def aleatoreo() {
 		rn = ((Math.random() * RN ) as int)
 	}

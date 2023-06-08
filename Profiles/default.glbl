@@ -21,7 +21,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'dev'</initValue>
+      <initValue>'pre'</initValue>
       <name>url</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

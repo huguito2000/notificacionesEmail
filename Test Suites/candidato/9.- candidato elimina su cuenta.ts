@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>verifyEmail</name>
+   <name>9.- candidato elimina su cuenta</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,12 +10,5 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>bda15c8f-fe70-4197-a2c2-97d164b71e46</testSuiteGuid>
-   <testCaseLink>
-      <guid>e291757d-01ce-4f98-a35d-5bc62558dce1</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Candidato/Registro/verifyEmail</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
+   <testSuiteGuid>415d9269-62f8-44d1-a6ac-24ac5c2190ab</testSuiteGuid>
 </TestSuiteEntity>

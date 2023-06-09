@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>postulationFinally</name>
+   <name>5.- El reclutador rechaza a un candidato</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,12 +10,12 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>969c6c67-2e43-4094-a753-2b73deb71e11</testSuiteGuid>
+   <testSuiteGuid>60f7b7ab-431d-423c-9574-cd3822c296fb</testSuiteGuid>
    <testCaseLink>
-      <guid>95691f53-75a6-41b9-84af-cf7ecd0d90e5</guid>
+      <guid>f05b334b-74dd-423d-a9cb-f5a7e60725e8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Candidato/postulacion/crear postulacion contratado</testCaseId>
+      <testCaseId>Test Cases/Candidato/postulacion/candidato rechazado</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

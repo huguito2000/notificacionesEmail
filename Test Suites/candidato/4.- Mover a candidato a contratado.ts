@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>assistantAddVacancy</name>
+   <name>4.- Mover a candidato a contratado</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,12 +10,12 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>588d212a-6479-4b5b-9ef0-6745e62439c9</testSuiteGuid>
+   <testSuiteGuid>45ccf114-7af4-4771-ac69-ab0bcbcb6ab8</testSuiteGuid>
    <testCaseLink>
-      <guid>48a36f8f-d6aa-4bad-ba77-002b3ee8bf47</guid>
+      <guid>eb91f2cd-4b51-49cb-a739-8e7d18e0634f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Reclutador/vacantes/vacante Team</testCaseId>
+      <testCaseId>Test Cases/Candidato/postulacion/crear postulacion contratado</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

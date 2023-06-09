@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>passwordReset</name>
+   <name>7.- Cuando llega el primer candidato</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,19 +10,12 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>b1304738-66fa-47cd-b3d7-4d9df8857b17</testSuiteGuid>
+   <testSuiteGuid>0538e21a-d08b-48a5-9f1c-f7f645f8393c</testSuiteGuid>
    <testCaseLink>
-      <guid>8fc7eac4-5125-4ec2-af9c-712ac7dd65de</guid>
+      <guid>3c489dee-65b8-4fbe-88a5-8458a5151c01</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Generales/cuenta bloqueda/cuenta Bloquedada Reclu</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>d9776e4f-f1f5-435b-8804-c996862aad35</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Generales/cuenta bloqueda/cuenta Bloqueda Cand</testCaseId>
+      <testCaseId>Test Cases/Candidato/postulacion/crear postulacion Aforo</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

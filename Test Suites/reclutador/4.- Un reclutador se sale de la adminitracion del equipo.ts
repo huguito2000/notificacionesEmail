@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>postulationMove</name>
+   <name>4.- Un reclutador se sale de la adminitracion del equipo</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,12 +10,12 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>6e8976cf-e29a-44af-9227-c2ae078a0672</testSuiteGuid>
+   <testSuiteGuid>bee58dd1-6bdb-4dca-b7a0-d67ce53cd910</testSuiteGuid>
    <testCaseLink>
-      <guid>b974ca25-5139-4413-b408-19d631042198</guid>
+      <guid>b1670ee5-82bc-494e-b802-0a640fb6335e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Candidato/postulacion/crear postulacion contratado</testCaseId>
+      <testCaseId>Test Cases/Reclutador/vacantes/delete vacante Team</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

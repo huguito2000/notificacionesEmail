@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>invitationTeam</name>
+   <name>2.- Mover al candidato de etapa</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,12 +10,12 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>8ad90c59-ffa7-4ace-ae36-8c4d8f762b88</testSuiteGuid>
+   <testSuiteGuid>6e8976cf-e29a-44af-9227-c2ae078a0672</testSuiteGuid>
    <testCaseLink>
-      <guid>cda86d48-0f11-4c4b-97c4-8af2cefcfcd7</guid>
+      <guid>b974ca25-5139-4413-b408-19d631042198</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Reclutador/invitacion team</testCaseId>
+      <testCaseId>Test Cases/Candidato/postulacion/crear postulacion contratado</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

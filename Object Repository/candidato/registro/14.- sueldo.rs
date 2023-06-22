@@ -19,7 +19,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;[\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/steepsOnboarding\&quot;,\n        \&quot;value\&quot;: \&quot;11\&quot;\n    },\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/desiredSalary\&quot;,\n        \&quot;value\&quot;: \&quot;20000\&quot;\n    }\n]&quot;,
+  &quot;text&quot;: &quot;[\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/steepsOnboarding\&quot;,\n        \&quot;value\&quot;: \&quot;11\&quot;\n    },\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/desiredSalary\&quot;,\n        \&quot;value\&quot;: \&quot;${salario}\&quot;\n    }\n]&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -59,6 +59,13 @@
       <id>c71cb70f-dd65-4095-8d52-07dec1244043</id>
       <masked>false</masked>
       <name>url</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.SalarioDeseado</defaultValue>
+      <description></description>
+      <id>8f229814-260d-4a53-9e43-cd00661705da</id>
+      <masked>false</masked>
+      <name>salario</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

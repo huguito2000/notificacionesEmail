@@ -15,11 +15,11 @@
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
-   <connectionTimeout>0</connectionTimeout>
+   <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;[\n    {\n        \&quot;company\&quot;: \&quot;asdadsad\&quot;,\n        \&quot;dateDeparture\&quot;: null,\n        \&quot;dateEntry\&quot;: \&quot;2000-12-12\&quot;,\n        \&quot;dependents\&quot;: false,\n        \&quot;functions\&quot;: \&quot;dasdadadadsadsdsadadadwdwefdfsfs\\ndsfdsfdsfdsfsdfsdfsdfsffsfs\&quot;,\n        \&quot;numberDependents\&quot;: 0,\n        \&quot;position\&quot;: {\n            \&quot;position\&quot;: \&quot;dsadad\&quot;\n        },\n        \&quot;positionType\&quot;: {\n            \&quot;positionTypeId\&quot;: \&quot;40288086796be11e01796c18f2f0006f\&quot;\n        },\n        \&quot;working\&quot;: true\n    }\n]&quot;,
+  &quot;text&quot;: &quot;[\n    {\n        \&quot;company\&quot;: \&quot;Involve\&quot;,\n        \&quot;dateDeparture\&quot;: null,\n        \&quot;dateEntry\&quot;: \&quot;${GlobalVariable.fechaExp}\&quot;,\n        \&quot;dependents\&quot;: false,\n        \&quot;functions\&quot;: \&quot;ser un buen lider\&quot;,\n        \&quot;numberDependents\&quot;: 0,\n        \&quot;position\&quot;: {\n            \&quot;position\&quot;: \&quot;${GlobalVariable.puesto}\&quot;\n        },\n        \&quot;positionType\&quot;: {\n            \&quot;positionTypeId\&quot;: \&quot;${GlobalVariable.tipoPuesto}\&quot;\n        },\n        \&quot;working\&quot;: true\n    }\n]&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -41,7 +41,7 @@
       <webElementGuid>791f98a6-5235-4e79-af4c-b7d27c550e1b</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.5.5</katalonVersion>
-   <maxResponseSize>0</maxResponseSize>
+   <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
    <restUrl>https://${url}.micros.involverh.com.mx/candidate/candidate/work-experience</restUrl>
@@ -51,7 +51,7 @@
    <soapRequestMethod></soapRequestMethod>
    <soapServiceEndpoint></soapServiceEndpoint>
    <soapServiceFunction></soapServiceFunction>
-   <socketTimeout>0</socketTimeout>
+   <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
       <defaultValue>GlobalVariable.url</defaultValue>
@@ -59,6 +59,13 @@
       <id>fba6a585-b522-4702-a212-95f315cd9930</id>
       <masked>false</masked>
       <name>url</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.fecha</defaultValue>
+      <description></description>
+      <id>ad09a35e-2ff4-4b3e-9c3b-f9d232e4f424</id>
+      <masked>false</masked>
+      <name>fecha</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

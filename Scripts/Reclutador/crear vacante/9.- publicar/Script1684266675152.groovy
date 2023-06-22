@@ -32,5 +32,23 @@ statusCode = WS.getResponseStatusCode(response)
 
 println(statusCode)
 
+responseText = response.getResponseText()
+
+println(responseText)
+
+def json = new JsonSlurper().parseText(responseText)
+
+json = json.vacantId
+
+println(json)
+
+vacantId = json
+
+println(json)
+
+GlobalVariable.vacantId = vacantId
+
+println(GlobalVariable.vacantId)
+
 WS.verifyResponseStatusCode(response, 200)
 

@@ -19,7 +19,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;[\n    {\n        \&quot;academicStatus\&quot;: {\n            \&quot;idStatus\&quot;: \&quot;402880de79730a2c0179731b7c1b0003\&quot;\n        },\n        \&quot;educationLevel\&quot;: {\n            \&quot;educationId\&quot;: \&quot;402881cf79c889e50179c8902b470005\&quot;,\n            \&quot;level\&quot;: 6\n        },\n        \&quot;countryInstitute\&quot;: \&quot;México\&quot;,\n        \&quot;degree\&quot;: \&quot;ingenieria\&quot;,\n        \&quot;instituteName\&quot;: \&quot;politecnico\&quot;,\n        \&quot;startYear\&quot;: \&quot;2000\&quot;,\n        \&quot;endYear\&quot;: \&quot;2000\&quot;\n    }\n]&quot;,
+  &quot;text&quot;: &quot;[\n    {\n        \&quot;academicStatus\&quot;: {\n            \&quot;idStatus\&quot;: \&quot;402880de79730a2c0179731b7c1b0003\&quot;\n        },\n        \&quot;educationLevel\&quot;: {\n            \&quot;educationId\&quot;: \&quot;${GlobalVariable.NivelAcademico}\&quot;,\n            \&quot;level\&quot;: 6\n        },\n        \&quot;countryInstitute\&quot;: \&quot;México\&quot;,\n        \&quot;degree\&quot;: \&quot;ingenieria\&quot;,\n        \&quot;instituteName\&quot;: \&quot;politecnico\&quot;,\n        \&quot;startYear\&quot;: \&quot;2000\&quot;,\n        \&quot;endYear\&quot;: \&quot;2000\&quot;\n    }\n]&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>

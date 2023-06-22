@@ -32,7 +32,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://${url}.micros.involverh.com.mx/vacancy/management/duplicate-vacancy/2c9f906e869458360186dd4a06cb0110</restUrl>
+   <restUrl>https://${url}.micros.involverh.com.mx/vacancy/management/duplicate-vacancy/${vacantId}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -47,6 +47,13 @@
       <id>838bb2fa-163f-4e71-9568-05bcbf6b3972</id>
       <masked>false</masked>
       <name>url</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.vacantId</defaultValue>
+      <description></description>
+      <id>57e8f18d-0c11-4bc6-8cdd-11df5cf30775</id>
+      <masked>false</masked>
+      <name>vacantId</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

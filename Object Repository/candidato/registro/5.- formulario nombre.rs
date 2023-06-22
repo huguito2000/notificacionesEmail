@@ -19,7 +19,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;[\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/steepsOnboarding\&quot;,\n        \&quot;value\&quot;: \&quot;1\&quot;\n    },\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/user/name\&quot;,\n        \&quot;value\&quot;: \&quot;hugo\&quot;\n    },\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/user/lastName\&quot;,\n        \&quot;value\&quot;: \&quot;Rodríguez\&quot;\n    },\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/user/secondLastName\&quot;,\n        \&quot;value\&quot;: \&quot;olivera\&quot;\n    }\n]&quot;,
+  &quot;text&quot;: &quot;[\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/steepsOnboarding\&quot;,\n        \&quot;value\&quot;: \&quot;1\&quot;\n    },\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/user/name\&quot;,\n        \&quot;value\&quot;: \&quot;${nombre}\&quot;\n    },\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/user/lastName\&quot;,\n        \&quot;value\&quot;: \&quot;${apellidoP}\&quot;\n    },\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/user/secondLastName\&quot;,\n        \&quot;value\&quot;: \&quot;${apellidoM}\&quot;\n    }\n]&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -59,6 +59,27 @@
       <id>cd23bbc1-ed7b-4804-bd96-434fcf1a612f</id>
       <masked>false</masked>
       <name>url</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.Nombres</defaultValue>
+      <description></description>
+      <id>6ef7bb50-0ca8-4289-813d-24c7a572dcce</id>
+      <masked>false</masked>
+      <name>nombre</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.ApellidoP</defaultValue>
+      <description></description>
+      <id>b91f5c3e-932d-4682-8d41-399d308ac508</id>
+      <masked>false</masked>
+      <name>apellidoP</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.ApellidoM</defaultValue>
+      <description></description>
+      <id>aaecbd7d-a10e-492f-81eb-dfdb8281930b</id>
+      <masked>false</masked>
+      <name>apellidoM</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

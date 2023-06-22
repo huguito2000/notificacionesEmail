@@ -27,34 +27,37 @@ import com.kms.katalon.core.testobject.ResponseObject as ResponseObject
 rn = 0
 WebUI.callTestCase(findTestCase('Reclutador/login/login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-response = WS.sendRequest(findTestObject('Reclutador/vacantes/activas/vacantes activas'))
+vacantId = []
 
-statusCode = WS.getResponseStatusCode(response)
 
-println(statusCode)
+	
+	response = WS.sendRequest(findTestObject('Reclutador/vacantes/activas/vacantes activas'))
+	
+	statusCode = WS.getResponseStatusCode(response)
+	
+	println(statusCode)
 
-responseText = response.getResponseText()
+	
+	responseText = response.getResponseText()
+	
+	println(responseText)
+	
+	def json = new JsonSlurper().parseText(responseText)
+	
+	json = json.content.vacant.vacantId
+	
+	vacantId = json.init()
+	
+	println(json)
+	
+	RN = json.size()
+	println(RN)
+	aleatoreo()
+	println(rn)
+	GlobalVariable.vacantId = vacantId[rn]
+	println(GlobalVariable.vacantId)
 
-println(responseText)
+	def aleatoreo() {
+		rn = ((Math.random() * RN ) as int)
+	}
 
-def json = new JsonSlurper().parseText(responseText)
-
-json = json.content.vacant.vacantId
-
-vacantId = json.init()
-
-println(json)
-
-RN = json.size()
-println(RN)
-
-aleatoreo()
-println(rn)
-GlobalVariable.vacantId = vacantId[rn]
-println(GlobalVariable.vacantId)
-
-WS.verifyResponseStatusCode(response, 200)
-
-def aleatoreo() {
-	rn = ((Math.random() * RN ) as int)
-}

@@ -15,6 +15,7 @@
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
+   <autoUpdateContent>true</autoUpdateContent>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
@@ -32,7 +33,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://${url}.micros.involverh.com.mx/recruiter/vacant/admin?pageSize=50&amp;pageNumber=0&amp;sortBy=publicationDate&amp;sortDirection=DESC&amp;status=ACTIVA</restUrl>
+   <restUrl>https://${url}.micros.involverh.com.mx/recruiter/vacant/admin?pageSize=5&amp;pageNumber=0&amp;sortBy=publicationDate&amp;sortDirection=DESC&amp;status=ACTIVA</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

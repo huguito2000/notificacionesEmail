@@ -15,6 +15,7 @@
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
+   <autoUpdateContent>false</autoUpdateContent>
    <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
@@ -24,7 +25,7 @@
   &quot;parameters&quot;: [
     {
       &quot;name&quot;: &quot;file&quot;,
-      &quot;value&quot;: &quot;/Users/huguito/Desktop/CV CarlosG.pdf&quot;,
+      &quot;value&quot;: &quot;/Users/huguito/Downloads/carlos cv.pdf&quot;,
       &quot;type&quot;: &quot;File&quot;,
       &quot;contentType&quot;: &quot;application/pdf&quot;
     }

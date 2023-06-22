@@ -3,7 +3,7 @@
    <description></description>
    <name>cuestionario</name>
    <tag></tag>
-   <elementGuidId>54517a4b-d6fd-487f-a0a2-91ce84f26de3</elementGuidId>
+   <elementGuidId>13f47cfb-dc4a-4bcd-aa56-025033d45e3f</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <authorizationRequest>
@@ -15,6 +15,7 @@
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
+   <autoUpdateContent>true</autoUpdateContent>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>

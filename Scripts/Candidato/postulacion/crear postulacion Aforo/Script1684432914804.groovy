@@ -22,9 +22,10 @@ import com.kms.katalon.core.testobject.ResponseObject as ResponseObject
 
 WebUI.callTestCase(findTestCase('Candidato/Registro/formulario 2'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Reclutador/vacantes/vacantes activas'), [:], FailureHandling.STOP_ON_FAILURE)
+//WebUI.callTestCase(findTestCase('Reclutador/vacantes/vacantes activas'), [:], FailureHandling.STOP_ON_FAILURE)
 
 statusCode = 0
+
 experiencia = 0
 
 println('el nivel de experiencia es')
@@ -41,20 +42,20 @@ responseText = response.getResponseText()
 
 println(responseText)
 
-while (statusCode !=200) {
-	
-WebUI.callTestCase(findTestCase('Reclutador/vacantes/vacantes activas'), [:], FailureHandling.STOP_ON_FAILURE)
-response = WS.sendRequest(findTestObject('candidato/postulacion/postulacion 1'))
+while (statusCode != 200) {
+    WebUI.callTestCase(findTestCase('Reclutador/vacantes/vacantes activas'), [:], FailureHandling.STOP_ON_FAILURE)
 
-statusCode = WS.getResponseStatusCode(response)
+    response = WS.sendRequest(findTestObject('candidato/postulacion/postulacion 1'))
 
-responseText = response.getResponseText()
+    statusCode = WS.getResponseStatusCode(response)
 
-println(responseText)
+    responseText = response.getResponseText()
 
-println(statusCode)
+    println(responseText)
 
-WebUI.delay(5)
+    println(statusCode)
+
+    WebUI.delay(5)
 }
 
 WS.verifyResponseStatusCode(response, 200)
@@ -118,6 +119,33 @@ responseText = response.getResponseText()
 println(responseText)
 
 WS.verifyResponseStatusCode(response, 200)
+
+response = WS.sendRequest(findTestObject('candidato/postulacion/HS'))
+
+statusCode = WS.getResponseStatusCode(response)
+
+responseText = response.getResponseText()
+
+println(responseText)
+
+json = new JsonSlurper().parseText(responseText)
+
+json = json.content.questionId
+
+println(statusCode)
+
+String s = json.sort()
+
+println(s)
+
+String codigo = s.replace('[', '')
+
+codigo = codigo.replace(']', '')
+
+println(codigo)
+
+GlobalVariable.questionId0 = codigo
+
 
 response = WS.sendRequest(findTestObject('candidato/postulacion/postulacion 3'))
 

@@ -40,9 +40,9 @@ def json = new JsonSlurper().parseText(responseText)
 
 println(json.content.email)
 
-println(json.size)
+println('estos emails ' + json.size)
 
-RN = json.size()
+RN = json.size
 
 println(RN)
 
@@ -59,18 +59,19 @@ println(GlobalVariable.email)
 println('se obtienen los usuarios')
 
 try {
-response = WS.sendRequest(findTestObject('Reclutador/restablecer pass/eliminar pass'))
+    response = WS.sendRequest(findTestObject('Reclutador/restablecer pass/eliminar pass'))
 
-statusCode = WS.getResponseStatusCode(response)
+    statusCode = WS.getResponseStatusCode(response)
 
-println(statusCode)
+    println(statusCode)
 
-WS.verifyResponseStatusCode(response, 200)
-
-}catch(Exception ex) {
-	println(statusCode)
+    WS.verifyResponseStatusCode(response, 200)
 }
+catch (Exception ex) {
+    println(statusCode)
+} 
+
 def aleatoreo() {
-	rn = ((Math.random() * RN) as int)
+    rn = ((Math.random() * RN) as int)
 }
 

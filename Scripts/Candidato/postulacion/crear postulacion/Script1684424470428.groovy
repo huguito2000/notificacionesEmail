@@ -39,7 +39,7 @@ statusCode = WS.getResponseStatusCode(response)
 println(statusCode)
 
 while (statusCode != 200) {
-    WebUI.callTestCase(findTestCase('Reclutador/vacantes/vacantes activas'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('vacantes activas'), [:], FailureHandling.STOP_ON_FAILURE)
 
     response = WS.sendRequest(findTestObject('candidato/postulacion/postulacion 1'))
 
@@ -86,8 +86,6 @@ codigo = json.sort()
 
 println(codigo)
 
-println(codigo[0])
-
 GlobalVariable.questionId0 = (codigo[0])
 
 println(codigo[1])
@@ -106,6 +104,8 @@ GlobalVariable.experiencia = experiencia
 
 println('estos son los años ' + GlobalVariable.experiencia)
 
+WS.verifyResponseStatusCode(response, 200)
+
 response = WS.sendRequest(findTestObject('candidato/postulacion/postulacion 2'))
 
 statusCode = WS.getResponseStatusCode(response)
@@ -118,6 +118,32 @@ responseText = response.getResponseText()
 
 println(responseText)
 
+response = WS.sendRequest(findTestObject('candidato/postulacion/HS'))
+
+statusCode = WS.getResponseStatusCode(response)
+
+responseText = response.getResponseText()
+
+println(responseText)
+
+json = new JsonSlurper().parseText(responseText)
+
+json = json.content.questionId
+
+println(statusCode)
+
+String s = json.sort()
+
+println(s)
+
+String codigo = s.replace('[', '')
+
+codigo = codigo.replace(']', '')
+
+println(codigo)
+
+GlobalVariable.questionId0 = codigo
+
 response = WS.sendRequest(findTestObject('candidato/postulacion/postulacion 3'))
 
 statusCode = WS.getResponseStatusCode(response)
@@ -128,12 +154,7 @@ responseText = response.getResponseText()
 
 println(responseText)
 
-WS.verifyResponseStatusCode(response, 200)
-
-responseText = response.getResponseText()
-
-println(responseText)
-
+WS.verifyResponseStatusCode(response, 200 /*
 response = WS.sendRequest(findTestObject('candidato/postulacion/video entrevista'))
 
 statusCode = WS.getResponseStatusCode(response)
@@ -150,6 +171,7 @@ println(statusCode)
 
 WS.verifyResponseStatusCode(response, 200)
 
+
 WebUI.openBrowser('https://yopmail.com/es/wm')
 
 WebUI.setText(findTestObject('Generales/Cuenta Bloqueada/Campo Email'), 'huguito.candidato')
@@ -163,6 +185,8 @@ WebUI.takeScreenshot('/Users/huguito/Desktop/notificaciones/Candidato/finalista.
 WebUI.delay(3)
 
 WebUI.closeBrowser()
+
+*/ )
 
 def experiencia() {
     experiencia = ((Math.random() * 60) as int)

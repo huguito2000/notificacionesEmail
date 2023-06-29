@@ -39,7 +39,7 @@ statusCode = WS.getResponseStatusCode(response)
 println(statusCode)
 
 while (statusCode != 200) {
-    WebUI.callTestCase(findTestCase('vacantes activas'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Reclutador/vacantes/vacantes activas'), [:], FailureHandling.STOP_ON_FAILURE)
 
     response = WS.sendRequest(findTestObject('candidato/postulacion/postulacion 1'))
 

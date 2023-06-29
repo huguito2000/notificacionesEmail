@@ -72,6 +72,10 @@ statusCode = WS.getResponseStatusCode(response)
 
 println(statusCode)
 
+responseText = response.getResponseText()
+
+println(responseText)
+
 WS.verifyResponseStatusCode(response, 200)
 
 responseText = response.getResponseText()

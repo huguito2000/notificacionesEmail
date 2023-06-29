@@ -144,4 +144,9 @@
       <initValue>''</initValue>
       <name>NivelAcademico</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>clientId</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

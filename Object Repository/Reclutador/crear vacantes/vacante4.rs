@@ -15,11 +15,12 @@
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
+   <autoUpdateContent>false</autoUpdateContent>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;newQuestions\&quot;: [\n        {\n            \&quot;question\&quot;: \&quot;tu mejor proyecto\&quot;,\n            \&quot;type\&quot;: \&quot;AREA_SPECIALTY\&quot;,\n            \&quot;typeQuestion\&quot;: \&quot;CERRADA\&quot;,\n            \&quot;isArmed\&quot;: false,\n            \&quot;exclud\&quot;: false,\n            \&quot;typeAnswer\&quot;: null\n        }\n    ]\n}&quot;,
+  &quot;text&quot;: &quot;{\n    \&quot;newQuestions\&quot;: [\n        {\n            \&quot;question\&quot;: \&quot;¿Cuantos años tienes de experiencia en el area?\&quot;,\n            \&quot;type\&quot;: \&quot;AREA_SPECIALTY\&quot;,\n            \&quot;typeQuestion\&quot;: \&quot;EXPERIENCIA\&quot;,\n            \&quot;isArmed\&quot;: false,\n            \&quot;exclud\&quot;: false,\n            \&quot;yearsExperience\&quot;: 1\n        },\n        {\n            \&quot;question\&quot;: \&quot;nivel de excel\&quot;,\n            \&quot;type\&quot;: \&quot;HARD_SKILL\&quot;,\n            \&quot;typeQuestion\&quot;: \&quot;ABIERTA\&quot;,\n            \&quot;isArmed\&quot;: false\n        }\n    ]\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -44,7 +45,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://${url}.micros.involverh.com.mx/recruiter/vacant/step4/${GlobalVariable.vacanteid}</restUrl>
+   <restUrl>https://${url}.micros.involverh.com.mx/user/vacant/step4/${GlobalVariable.vacanteid}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

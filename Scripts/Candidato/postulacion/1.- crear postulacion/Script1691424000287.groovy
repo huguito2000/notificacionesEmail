@@ -130,19 +130,30 @@ json = new JsonSlurper().parseText(responseText)
 
 json = json.content.questionId
 
+println(json)
+
+println(json.size())
+
+codigo = json.sort()
+
 println(statusCode)
 
-String s = json.sort()
+/*String s = json.sort()
 
-println(s)
 
 String codigo = s.replace('[', '')
 
 codigo = codigo.replace(']', '')
 
-println(codigo)
+println(codigo)*/
 
-GlobalVariable.questionId0 = codigo
+GlobalVariable.questionId0 = codigo[0]
+
+println(GlobalVariable.questionId0)
+
+GlobalVariable.questionId1 = codigo[1]
+
+println(GlobalVariable.questionId1)
 
 response = WS.sendRequest(findTestObject('candidato/postulacion/postulacion 3'))
 
@@ -190,6 +201,8 @@ WebUI.closeBrowser()
 
 def experiencia() {
     experiencia = ((Math.random() * 60) as int)
+	
+	println(experiencia)
 }
 
 def nivelExperiencia() {

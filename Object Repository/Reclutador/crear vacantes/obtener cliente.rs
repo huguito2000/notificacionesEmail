@@ -41,7 +41,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://${url}.micros.involverh.com.mx/recruiter/client</restUrl>
+   <restUrl>https://${url}.micros.involverh.com.mx/user/client</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

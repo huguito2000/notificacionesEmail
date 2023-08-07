@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Candidato/Registro/crear password'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Candidato/Registro/2.- crear password'), [:], FailureHandling.STOP_ON_FAILURE)
 
 fecha = ["2004-12-12","2003-12-12","2002-12-12","2001-12-12","2000-12-12","1999-12-12","1998-12-12","1997-12-12","1996-12-12","1995-12-12",
 	"1994-12-12","1993-12-12","1992-12-12","1991-12-12","1990-12-12","1989-12-12","1988-12-12","1987-12-12","1986-12-12","1985-12-12","1984-12-12",

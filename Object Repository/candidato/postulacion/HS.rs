@@ -33,7 +33,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://pre.micros.involverh.com.mx/candidate/candidate/postulation/question?page=0&amp;size=100&amp;processId=${GlobalVariable.postulacionId}&amp;questionnaire=HARD_SKILL</restUrl>
+   <restUrl>https://pre.micros.involverh.com.mx/user/candidate/postulation/question?page=0&amp;size=100&amp;processId=${GlobalVariable.postulacionId}&amp;questionnaire=HARD_SKILL</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

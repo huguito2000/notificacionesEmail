@@ -27,13 +27,13 @@
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${GlobalVariable.TokenReclu}</value>
-      <webElementGuid>25e35a7f-a381-41a3-bca3-a4b281cca585</webElementGuid>
+      <webElementGuid>a008632d-4735-4654-b11e-01af207909b3</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.5.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://${url}.micros.involverh.com.mx/recruiter/vacant/admin?pageSize=5&amp;pageNumber=0&amp;sortBy=publicationDate&amp;sortDirection=DESC&amp;status=ACTIVA</restUrl>
+   <restUrl>https://${url}.micros.involverh.com.mx/user/vacant/admin?pageSize=5&amp;pageNumber=0&amp;sortBy=publicationDate&amp;sortDirection=DESC&amp;status=ACTIVA</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

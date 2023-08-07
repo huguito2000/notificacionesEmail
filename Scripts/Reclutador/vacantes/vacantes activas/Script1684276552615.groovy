@@ -25,39 +25,48 @@ import groovy.json.JsonSlurper as JsonSlurper
 import com.kms.katalon.core.testobject.ResponseObject as ResponseObject
 
 rn = 0
+
 WebUI.callTestCase(findTestCase('Reclutador/login/login'), [:], FailureHandling.STOP_ON_FAILURE)
 
 vacantId = []
 
+response = WS.sendRequest(findTestObject('candidato/postulacion/vacantes activas'))
 
-	
-	response = WS.sendRequest(findTestObject('Reclutador/vacantes/activas/vacantes activas'))
-	
-	statusCode = WS.getResponseStatusCode(response)
-	
-	println(statusCode)
+statusCode = WS.getResponseStatusCode(response)
 
-	
-	responseText = response.getResponseText()
-	
-	println(responseText)
-	
-	def json = new JsonSlurper().parseText(responseText)
-	
-	json = json.content.vacant.vacantId
-	
-	vacantId = json.init()
-	
-	println(json)
-	
-	RN = json.size()
-	println(RN)
-	aleatoreo()
-	println(rn)
-	GlobalVariable.vacantId = vacantId[rn]
-	println(GlobalVariable.vacantId)
+println(statusCode)
 
-	def aleatoreo() {
-		rn = ((Math.random() * RN ) as int)
-	}
+responseText = response.getResponseText()
+
+println(responseText)
+
+def json = new JsonSlurper().parseText(responseText)
+
+json = json.content.vacant.vacantId
+
+vacantId = json.init()
+
+println(json)
+
+vacantId = json
+
+println(vacantId)
+
+
+RN = json.size()
+
+println(RN)
+
+aleatoreo()
+
+println(rn)
+
+GlobalVariable.vacantId = (vacantId[rn])
+
+println(GlobalVariable.vacantId)
+
+def aleatoreo() {
+    rn = ((Math.random() * RN) as int)
+	println(rn) 
+}
 

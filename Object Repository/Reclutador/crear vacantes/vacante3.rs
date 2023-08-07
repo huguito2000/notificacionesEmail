@@ -15,11 +15,12 @@
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
+   <autoUpdateContent>false</autoUpdateContent>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;academicTitle\&quot;: \&quot;dsda\&quot;,\n    \&quot;area\&quot;: [\n        {\n            \&quot;area\&quot;: {\n                \&quot;areaId\&quot;: \&quot;40288087797b055a01797b12ab830007\&quot;\n            },\n            \&quot;exclud\&quot;: false,\n            \&quot;yearExperience\&quot;: 1\n        }\n    ],\n    \&quot;hardSkill\&quot;: [\n        {\n            \&quot;level\&quot;: \&quot;BASICO\&quot;,\n            \&quot;skillId\&quot;: \&quot;2c9f93647d0ba197017d14ef1b830061\&quot;,\n            \&quot;exclud\&quot;: false\n        }\n    ],\n    \&quot;idEducation\&quot;: \&quot;402881cf79c889e50179c88fc5850003\&quot;,\n    \&quot;levelEducationExclud\&quot;: false,\n    \&quot;idStatusEducation\&quot;: \&quot;402880de79730a2c0179731b79c40001\&quot;,\n    \&quot;statusEducationExclud\&quot;: false,\n    \&quot;institution\&quot;: [],\n    \&quot;language\&quot;: [],\n    \&quot;softSkill\&quot;: [\n        {\n            \&quot;skillId\&quot;: \&quot;2c9f906e7ca3afe0017cce1f879900b6\&quot;\n        }\n    ],\n    \&quot;speciality\&quot;: [\n        {\n            \&quot;exclud\&quot;: false,\n            \&quot;speciality\&quot;: {\n                \&quot;specialtyId\&quot;: \&quot;40288087797b055a01797b3703990021\&quot;\n            },\n            \&quot;yearExperience\&quot;: 1\n        }\n    ]\n}&quot;,
+  &quot;text&quot;: &quot;{\n    \&quot;academicTitle\&quot;: \&quot;ingeniero\&quot;,\n    \&quot;area\&quot;: [\n        {\n            \&quot;exclud\&quot;: false,\n            \&quot;area\&quot;: {\n                \&quot;areaId\&quot;: \&quot;40288087797b055a01797b12ab830007\&quot;\n            },\n            \&quot;yearExperience\&quot;: 3\n        }\n    ],\n    \&quot;hardSkill\&quot;: [\n        {\n            \&quot;level\&quot;: \&quot;AVANZADO\&quot;,\n            \&quot;skillId\&quot;: \&quot;2c9f93647d0ba197017d14ef1b830061\&quot;,\n            \&quot;exclud\&quot;: false\n        }\n    ],\n    \&quot;idEducation\&quot;: \&quot;402881cf79c889e50179c88feecf0004\&quot;,\n    \&quot;levelEducationExclud\&quot;: false,\n    \&quot;idStatusEducation\&quot;: \&quot;402880de79730a2c0179731b7c1b0003\&quot;,\n    \&quot;statusEducationExclud\&quot;: false,\n    \&quot;institution\&quot;: [\n        {\n            \&quot;idInstitution\&quot;: \&quot;000000008878999b01888c7c40580010\&quot;\n        }\n    ],\n    \&quot;language\&quot;: [],\n    \&quot;softSkill\&quot;: [\n        {\n            \&quot;skillId\&quot;: \&quot;0000000088c520440188d5ce7c2d00fb\&quot;\n        }\n    ],\n    \&quot;speciality\&quot;: [\n        {\n            \&quot;exclud\&quot;: false,\n            \&quot;speciality\&quot;: {\n                \&quot;specialtyId\&quot;: \&quot;40288087797b055a01797b3703990021\&quot;\n            },\n            \&quot;yearExperience\&quot;: 3\n        }\n    ]\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -44,7 +45,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://${url}.micros.involverh.com.mx/recruiter/vacant/step3/${GlobalVariable.vacanteid}</restUrl>
+   <restUrl>https://${url}.micros.involverh.com.mx/user/vacant/step3/${GlobalVariable.vacanteid}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

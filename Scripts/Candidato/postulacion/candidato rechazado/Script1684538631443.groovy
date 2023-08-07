@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Candidato/postulacion/crear postulacion'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Candidato/postulacion/1.- crear postulacion'), [:], FailureHandling.STOP_ON_FAILURE)
 
 response = WS.sendRequest(findTestObject('Reclutador/postulacion/rechazado'))
 

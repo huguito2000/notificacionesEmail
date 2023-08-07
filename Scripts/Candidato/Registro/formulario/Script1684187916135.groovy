@@ -25,11 +25,11 @@ fecha = ["2004-12-12","2003-12-12","2002-12-12","2001-12-12","2000-12-12","1999-
 	"1973-12-12","1972-12-12","1971-12-12","1970-12-12","1969-12-12","1968-12-12","1967-12-12","1966-12-12","1965-12-12","1964-12-12",
 	"1963-12-12","1962-12-12","1961-12-12","1960-12-12"]
 
-Nombres = ['Hugo', 'Paco', 'Luis', 'Carlos', 'Jorge', 'Alberto', 'Marcos', 'Victor', 'Raul', 'Juan']
+Nombres = ['Hugo', 'Dennis', 'Miguel', 'Gabriel', 'Javi', 'Lucio', 'Jesus', 'Victor', 'Abraham', 'Juan']
 
 ApellidoP = ['Álvarez', 'Castillo', 'De León', 'Díaz', 'Espinoza', 'Fernández', 'García', 'Salazar', 'Santana', 'Zambrano']
 
-ApellidoM = ['Álvarez', 'Castillo', 'De León', 'Díaz', 'Espinoza', 'Fernández', 'García', 'Salazar', 'Santana', 'Zambrano']
+ApellidoM = ['Perez', 'Rodriguez', 'Martinez', 'Garcia', 'Torres', 'Olivera', 'Lopez', 'Sanchez', 'Ascarragan', 'Hernandez']
 
 Random rand = new Random()
 

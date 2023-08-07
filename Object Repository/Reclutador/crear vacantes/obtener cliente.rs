@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>7.- genero</name>
+   <name>obtener cliente</name>
    <tag></tag>
-   <elementGuidId>fc39be36-91a8-4e89-a9cb-2d146d4239f3</elementGuidId>
+   <elementGuidId>c08c90e0-0d3d-47ab-a40f-53f2676cdce0</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <authorizationRequest>
       <authorizationInfo>
          <entry>
             <key>bearerToken</key>
-            <value>${GlobalVariable.TokenCand}</value>
+            <value>${GlobalVariable.TokenReclu}</value>
          </entry>
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
@@ -19,33 +19,29 @@
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent>{
-  &quot;text&quot;: &quot;[\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/steepsOnboarding\&quot;,\n        \&quot;value\&quot;: 3\n    },\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/user/gender\&quot;,\n        \&quot;value\&quot;: {\n            \&quot;catalogSystemId\&quot;: \&quot;4028e4a986843df50186845182a1000a\&quot;,\n            \&quot;name\&quot;: \&quot;HOMBRE\&quot;,\n            \&quot;type\&quot;: \&quot;gender\&quot;,\n            \&quot;status\&quot;: true,\n            \&quot;keySystem\&quot;: \&quot;MEX\&quot;\n        }\n    }\n]&quot;,
-  &quot;contentType&quot;: &quot;application/json&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
-}</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Content-Type</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>10706b72-1773-4405-bdb7-f482620ee34a</webElementGuid>
+      <webElementGuid>e3a95b18-089c-4d29-9908-c64d06baf10f</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
-      <value>Bearer ${GlobalVariable.TokenCand}</value>
-      <webElementGuid>4e208666-d269-443f-8753-b943bce15b94</webElementGuid>
+      <value>Bearer ${GlobalVariable.TokenReclu}</value>
+      <webElementGuid>3a5ce35d-4f82-4681-bb73-522d84f3db9f</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.5.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>PATCH</restRequestMethod>
-   <restUrl>https://${url}.micros.involverh.com.mx/user/candidate</restUrl>
+   <restRequestMethod>GET</restRequestMethod>
+   <restUrl>https://${url}.micros.involverh.com.mx/recruiter/client</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -55,11 +51,25 @@
    <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
+      <defaultValue>GlobalVariable.TokenReclu</defaultValue>
+      <description></description>
+      <id>8f4b3b6c-a2eb-42f8-8a26-0d9d1e3a8c9f</id>
+      <masked>false</masked>
+      <name>Token</name>
+   </variables>
+   <variables>
       <defaultValue>GlobalVariable.url</defaultValue>
       <description></description>
-      <id>356611f1-e7ab-4a79-916f-b82954a559ca</id>
+      <id>27599031-b44e-4a2a-8348-10e7b25a4711</id>
       <masked>false</masked>
       <name>url</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.empresa</defaultValue>
+      <description></description>
+      <id>f7f9763f-743b-4c67-b993-9dc2b365b354</id>
+      <masked>false</masked>
+      <name>empresa</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

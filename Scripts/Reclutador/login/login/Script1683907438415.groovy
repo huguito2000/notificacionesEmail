@@ -45,7 +45,6 @@ GlobalVariable.recruiterId = json.recruiterId
 GlobalVariable.empresa = json.company.companyId
 println(GlobalVariable.empresa)
 
-
 Map parsed = response.getHeaderFields()
 
 String api = parsed.token

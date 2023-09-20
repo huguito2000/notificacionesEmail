@@ -1,47 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>1.- crear usuario</name>
+   <name>duplicar</name>
    <tag></tag>
-   <elementGuidId>3f724609-c90b-4cb2-a234-0ac1831b15b9</elementGuidId>
+   <elementGuidId>a777276c-8ab5-4055-b35f-ea894d13bb61</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <connectionTimeout>0</connectionTimeout>
+   <authorizationRequest>
+      <authorizationInfo>
+         <entry>
+            <key>bearerToken</key>
+            <value>${GlobalVariable.TokenReclu}</value>
+         </entry>
+      </authorizationInfo>
+      <authorizationType>Bearer</authorizationType>
+   </authorizationRequest>
+   <autoUpdateContent>true</autoUpdateContent>
+   <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;email\&quot;: \&quot;${GlobalVariable.email}\&quot;,\n    \&quot;userRol\&quot;: \&quot;CANDIDATE\&quot;,\n    \&quot;keySystem\&quot;: \&quot;MEX\&quot;\n}&quot;,
-  &quot;contentType&quot;: &quot;application/json&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
-}</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
+      <name>Authorization</name>
       <type>Main</type>
-      <value>application/json</value>
-      <webElementGuid>1a3487af-213d-4f9e-9026-68b0d3efc493</webElementGuid>
+      <value>Bearer ${GlobalVariable.TokenReclu}</value>
+      <webElementGuid>19751c0e-e0c5-4735-8b95-9e8e39017b2a</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.5.5</katalonVersion>
-   <maxResponseSize>0</maxResponseSize>
+   <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://${url}.micros.involverh.com.mx/notification/registry</restUrl>
+   <restUrl>${url}/vacancy/management/duplicate-vacancy/${vacantId}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceEndpoint></soapServiceEndpoint>
    <soapServiceFunction></soapServiceFunction>
-   <socketTimeout>0</socketTimeout>
+   <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
       <defaultValue>GlobalVariable.url</defaultValue>
       <description></description>
-      <id>02c7b2e5-5391-47bd-8fa5-98affc99146d</id>
+      <id>838bb2fa-163f-4e71-9568-05bcbf6b3972</id>
       <masked>false</masked>
       <name>url</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.vacantId</defaultValue>
+      <description></description>
+      <id>57e8f18d-0c11-4bc6-8cdd-11df5cf30775</id>
+      <masked>false</masked>
+      <name>vacantId</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

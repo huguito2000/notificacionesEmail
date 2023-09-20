@@ -45,7 +45,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://pre.micros.involverh.com.mx/user/selection-process/reject?notification=true</restUrl>
+   <restUrl>${url}/user/selection-process/reject?notification=true</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

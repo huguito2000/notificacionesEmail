@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>vacante2</name>
+   <name>4.- vacante2</name>
    <tag></tag>
    <elementGuidId>1431dca5-a039-44ca-b224-d02fd01bfec3</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,12 +15,12 @@
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
-   <autoUpdateContent>true</autoUpdateContent>
+   <autoUpdateContent>false</autoUpdateContent>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;[\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/mission\&quot;,\n        \&quot;value\&quot;: \&quot;Crear soluciones innovadoras y eficientes a través de la programación, para satisfacer las necesidades tecnológicas y contribuir al éxito del equipo y la empresa.\&quot;\n    },\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/functions\&quot;,\n        \&quot;value\&quot;: \&quot;* Escuchar y comprender las necesidades y requerimientos del cliente para el desarrollo de software. \\n*  Diseñar y desarrollar soluciones tecnológicas eficientes, utilizando lenguajes de programación y herramientas adecuadas. \\n*  Realizar pruebas rigurosas para asegurar la calidad del software desarrollado.\&quot;\n    },\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/typePositionId\&quot;,\n        \&quot;value\&quot;: \&quot;40288086796be11e01796c18e66f0064\&quot;\n    },\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/contractId\&quot;,\n        \&quot;value\&quot;: \&quot;40288088798adb5701798b18e4fb0000\&quot;\n    },\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/peopleCharge\&quot;,\n        \&quot;value\&quot;: \&quot;3\&quot;\n    },\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/schedule\&quot;,\n        \&quot;value\&quot;: \&quot;Lunes a viernes de 8:00 a 17:00 hrs\&quot;\n    },\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/allNationality\&quot;,\n        \&quot;value\&quot;: \&quot;true\&quot;\n    },\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/workingDay\&quot;,\n        \&quot;value\&quot;: {\n            \&quot;catalogSystemId\&quot;: \&quot;0000000088d5e9020188da01e8630000\&quot;,\n            \&quot;name\&quot;: \&quot;Tiempo completo\&quot;,\n            \&quot;type\&quot;: \&quot;workingDay\&quot;,\n            \&quot;status\&quot;: true,\n            \&quot;keySystem\&quot;: \&quot;MEX\&quot;\n        }\n    },\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/steps\&quot;,\n        \&quot;value\&quot;: \&quot;2\&quot;\n    }\n]&quot;,
+  &quot;text&quot;: &quot;[\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/mission\&quot;,\n        \&quot;value\&quot;: \&quot;La misión del tester es asegurar la calidad de los productos, identificando y reportando defectos para brindar una experiencia perfecta al usuario.\&quot;\n    },\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/functions\&quot;,\n        \&quot;value\&quot;: \&quot;* Realizar pruebas de software para identificar bugs y asegurar la calidad del producto. \\n*  Crear y ejecutar casos de prueba siguiendo los requerimientos del proyecto. \\n*  Documentar y comunicar los resultados de las pruebas de manera clara y precisa. \\n*  Colaborar con los desarrolladores para resolver los problemas encontrados y proponer mejoras al software.\&quot;\n    },\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/typePositionId\&quot;,\n        \&quot;value\&quot;: \&quot;40288086796be11e01796c18e8c10066\&quot;\n    },\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/contractId\&quot;,\n        \&quot;value\&quot;: \&quot;40288088798adb5701798b18e4fb0000\&quot;\n    },\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/peopleCharge\&quot;,\n        \&quot;value\&quot;: \&quot;1\&quot;\n    },\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/schedule\&quot;,\n        \&quot;value\&quot;: \&quot;todos los dias\&quot;\n    },\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/allNationality\&quot;,\n        \&quot;value\&quot;: \&quot;true\&quot;\n    },\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/workingDay\&quot;,\n        \&quot;value\&quot;: {\n            \&quot;catalogSystemId\&quot;: \&quot;0000000088d5e9020188da01e8630000\&quot;,\n            \&quot;name\&quot;: \&quot;Tiempo completo\&quot;,\n            \&quot;type\&quot;: \&quot;workingDay\&quot;,\n            \&quot;status\&quot;: true,\n            \&quot;keySystem\&quot;: \&quot;MEX\&quot;\n        }\n    },\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/steps\&quot;,\n        \&quot;value\&quot;: \&quot;2\&quot;\n    }\n]&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -45,7 +45,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>PATCH</restRequestMethod>
-   <restUrl>https://${url}.micros.involverh.com.mx/user/vacant/${GlobalVariable.vacanteid}</restUrl>
+   <restUrl>${url}/vacancy/management/${GlobalVariable.vacanteid}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

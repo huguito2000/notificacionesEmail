@@ -52,7 +52,7 @@
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://${url}.micros.involverh.com.mx/files/upload/uploadFile?typeFile=URL_CV</restUrl>
+   <restUrl>${url}/files/upload/uploadFile?typeFile=URL_CV</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

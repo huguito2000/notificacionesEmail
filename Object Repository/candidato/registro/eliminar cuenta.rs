@@ -1,39 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>publicar</name>
+   <name>eliminar cuenta</name>
    <tag></tag>
-   <elementGuidId>8e33f89d-c438-4c0e-ae19-201228a5bf2f</elementGuidId>
+   <elementGuidId>726e7a9a-3186-41b0-8ad0-06141e6da7a6</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <authorizationRequest>
       <authorizationInfo>
          <entry>
             <key>bearerToken</key>
-            <value>${GlobalVariable.TokenReclu}</value>
+            <value>${GlobalVariable.TokenCand}</value>
          </entry>
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
-   <autoUpdateContent>true</autoUpdateContent>
+   <autoUpdateContent>false</autoUpdateContent>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent></httpBodyContent>
-   <httpBodyType></httpBodyType>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n    \&quot;password\&quot;: \&quot;Abcd.1234\&quot;\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
-      <value>Bearer ${GlobalVariable.TokenReclu}</value>
-      <webElementGuid>0cb004da-57ef-41d9-a65e-2c5c94b4d33b</webElementGuid>
+      <value>Bearer ${GlobalVariable.TokenCand}</value>
+      <webElementGuid>15886b69-5473-44f6-98df-bda073928349</webElementGuid>
    </httpHeaderProperties>
-   <katalonVersion>8.5.5</katalonVersion>
+   <katalonVersion>8.6.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>PUT</restRequestMethod>
-   <restUrl>https://${url}.micros.involverh.com.mx/user/vacant/actived?vacantId=${GlobalVariable.vacanteid}&amp;approved=false</restUrl>
+   <restRequestMethod>DELETE</restRequestMethod>
+   <restUrl>${url}/notification/deleteUser/delete-candidate</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -42,13 +46,6 @@
    <soapServiceFunction></soapServiceFunction>
    <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
-   <variables>
-      <defaultValue>GlobalVariable.url</defaultValue>
-      <description></description>
-      <id>b1fe4a13-7b99-404d-ab40-f3cb91acdbe2</id>
-      <masked>false</masked>
-      <name>url</name>
-   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

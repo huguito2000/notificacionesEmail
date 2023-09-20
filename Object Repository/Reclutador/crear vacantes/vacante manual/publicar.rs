@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>4.1 - telefono</name>
+   <name>publicar</name>
    <tag></tag>
-   <elementGuidId>5a5a44a0-af10-4658-8c9d-27d961b63c6e</elementGuidId>
+   <elementGuidId>8e33f89d-c438-4c0e-ae19-201228a5bf2f</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <authorizationRequest>
       <authorizationInfo>
          <entry>
             <key>bearerToken</key>
-            <value>${GlobalVariable.TokenCand}</value>
+            <value>${GlobalVariable.TokenReclu}</value>
          </entry>
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
-   <connectionTimeout>0</connectionTimeout>
+   <autoUpdateContent>true</autoUpdateContent>
+   <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent></httpBodyContent>
@@ -25,35 +26,28 @@
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
-      <value>Bearer ${GlobalVariable.TokenCand}</value>
-      <webElementGuid>98d4959f-7201-4d63-83e1-0368cf1698ea</webElementGuid>
+      <value>Bearer ${GlobalVariable.TokenReclu}</value>
+      <webElementGuid>0cb004da-57ef-41d9-a65e-2c5c94b4d33b</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.5.5</katalonVersion>
-   <maxResponseSize>0</maxResponseSize>
+   <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://${url}.micros.involverh.com.mx/notification/verify/check-code-sms?code=${codigo}</restUrl>
+   <restRequestMethod>PUT</restRequestMethod>
+   <restUrl>${url}/vacancy/management/actived?vacantId=${GlobalVariable.vacanteid}&amp;approved=false</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceEndpoint></soapServiceEndpoint>
    <soapServiceFunction></soapServiceFunction>
-   <socketTimeout>0</socketTimeout>
+   <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
       <defaultValue>GlobalVariable.url</defaultValue>
       <description></description>
-      <id>8584265d-1fba-4c41-93be-c58da1725c5c</id>
+      <id>b1fe4a13-7b99-404d-ab40-f3cb91acdbe2</id>
       <masked>false</masked>
       <name>url</name>
-   </variables>
-   <variables>
-      <defaultValue>GlobalVariable.codigo</defaultValue>
-      <description></description>
-      <id>87cee43c-2e24-4b6f-9d7b-b54d51d968dd</id>
-      <masked>false</masked>
-      <name>codigo</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

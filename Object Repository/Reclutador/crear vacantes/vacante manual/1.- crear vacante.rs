@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>vacante4</name>
+   <name>1.- crear vacante</name>
    <tag></tag>
-   <elementGuidId>be294680-3d1c-48c0-ab88-56570b5ee194</elementGuidId>
+   <elementGuidId>f0e089fb-8602-4f63-a779-919b0ebba8dd</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <authorizationRequest>
@@ -15,23 +15,19 @@
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
-   <autoUpdateContent>false</autoUpdateContent>
+   <autoUpdateContent>true</autoUpdateContent>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;newQuestions\&quot;: [\n        {\n            \&quot;question\&quot;: \&quot;¿Cuantos años tienes de experiencia en el area?\&quot;,\n            \&quot;type\&quot;: \&quot;AREA_SPECIALTY\&quot;,\n            \&quot;typeQuestion\&quot;: \&quot;EXPERIENCIA\&quot;,\n            \&quot;isArmed\&quot;: false,\n            \&quot;exclud\&quot;: false,\n            \&quot;yearsExperience\&quot;: 1\n        },\n        {\n            \&quot;question\&quot;: \&quot;nivel de excel\&quot;,\n            \&quot;type\&quot;: \&quot;HARD_SKILL\&quot;,\n            \&quot;typeQuestion\&quot;: \&quot;ABIERTA\&quot;,\n            \&quot;isArmed\&quot;: false\n        }\n    ]\n}&quot;,
-  &quot;contentType&quot;: &quot;application/json&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
-}</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Content-Type</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>e0ebe77b-6cf3-4865-9461-4fc92be42888</webElementGuid>
+      <webElementGuid>e3a95b18-089c-4d29-9908-c64d06baf10f</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -39,13 +35,13 @@
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${GlobalVariable.TokenReclu}</value>
-      <webElementGuid>61001f6b-259f-496f-824e-429a14694043</webElementGuid>
+      <webElementGuid>7766f6c4-6a96-4bed-ab1f-e93a33cc508c</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.5.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://${url}.micros.involverh.com.mx/user/vacant/step4/${GlobalVariable.vacanteid}</restUrl>
+   <restRequestMethod>GET</restRequestMethod>
+   <restUrl>${url}/user/company/${empresa}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -55,11 +51,25 @@
    <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
+      <defaultValue>GlobalVariable.TokenReclu</defaultValue>
+      <description></description>
+      <id>8f4b3b6c-a2eb-42f8-8a26-0d9d1e3a8c9f</id>
+      <masked>false</masked>
+      <name>Token</name>
+   </variables>
+   <variables>
       <defaultValue>GlobalVariable.url</defaultValue>
       <description></description>
-      <id>eaec20b9-1620-4809-9bf1-a321efd058d4</id>
+      <id>27599031-b44e-4a2a-8348-10e7b25a4711</id>
       <masked>false</masked>
       <name>url</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.empresa</defaultValue>
+      <description></description>
+      <id>f7f9763f-743b-4c67-b993-9dc2b365b354</id>
+      <masked>false</masked>
+      <name>empresa</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

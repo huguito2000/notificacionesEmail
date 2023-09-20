@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>crear vacante</name>
+   <name>21.- video</name>
    <tag></tag>
-   <elementGuidId>f0e089fb-8602-4f63-a779-919b0ebba8dd</elementGuidId>
+   <elementGuidId>f7417072-38b6-4e08-bf07-8b6fb691fd72</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <authorizationRequest>
       <authorizationInfo>
          <entry>
             <key>bearerToken</key>
-            <value>${GlobalVariable.TokenReclu}</value>
+            <value>${GlobalVariable.TokenCand}</value>
          </entry>
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
@@ -19,29 +19,40 @@
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent></httpBodyContent>
-   <httpBodyType></httpBodyType>
+   <httpBodyContent>{
+  &quot;contentType&quot;: &quot;multipart/form-data&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;,
+  &quot;parameters&quot;: [
+    {
+      &quot;name&quot;: &quot;file&quot;,
+      &quot;value&quot;: &quot;/Users/huguito/Downloads/URL_PRESENTATION_VIDEO_1692382544239.mp4&quot;,
+      &quot;type&quot;: &quot;File&quot;,
+      &quot;contentType&quot;: &quot;multipart/form-data&quot;
+    }
+  ]
+}</httpBodyContent>
+   <httpBodyType>form-data</httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Content-Type</name>
       <type>Main</type>
-      <value>application/json</value>
-      <webElementGuid>e3a95b18-089c-4d29-9908-c64d06baf10f</webElementGuid>
+      <value>multipart/form-data</value>
+      <webElementGuid>658ba5c8-400e-4451-839d-11abdd67dca9</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
-      <value>Bearer ${GlobalVariable.TokenReclu}</value>
-      <webElementGuid>7766f6c4-6a96-4bed-ab1f-e93a33cc508c</webElementGuid>
+      <value>Bearer ${GlobalVariable.TokenCand}</value>
+      <webElementGuid>1478855e-51cc-4dfe-a319-c09f190c0340</webElementGuid>
    </httpHeaderProperties>
-   <katalonVersion>8.5.5</katalonVersion>
+   <katalonVersion>8.6.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://pre.micros.involverh.com.mx/user/company/${empresa}</restUrl>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${url}/files/upload/presentation-video</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -51,25 +62,11 @@
    <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>GlobalVariable.TokenReclu</defaultValue>
-      <description></description>
-      <id>8f4b3b6c-a2eb-42f8-8a26-0d9d1e3a8c9f</id>
-      <masked>false</masked>
-      <name>Token</name>
-   </variables>
-   <variables>
       <defaultValue>GlobalVariable.url</defaultValue>
       <description></description>
-      <id>27599031-b44e-4a2a-8348-10e7b25a4711</id>
+      <id>8f84c361-493d-40bb-851a-c1717908b754</id>
       <masked>false</masked>
       <name>url</name>
-   </variables>
-   <variables>
-      <defaultValue>GlobalVariable.empresa</defaultValue>
-      <description></description>
-      <id>f7f9763f-743b-4c67-b993-9dc2b365b354</id>
-      <masked>false</masked>
-      <name>empresa</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

@@ -1,51 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>vacante6</name>
+   <name>4.1- check code</name>
    <tag></tag>
-   <elementGuidId>0cc37713-2685-478b-a3f3-3827d7edf158</elementGuidId>
+   <elementGuidId>1402c9b2-fb48-4a8d-ac8f-ea106d7a0c3a</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <authorizationRequest>
       <authorizationInfo>
          <entry>
             <key>bearerToken</key>
-            <value>${GlobalVariable.TokenReclu}</value>
+            <value>${GlobalVariable.TokenCand}</value>
          </entry>
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
-   <autoUpdateContent>false</autoUpdateContent>
+   <autoUpdateContent>true</autoUpdateContent>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;recruiters\&quot;: [\n        {\n            \&quot;Notifications\&quot;: true,\n            \&quot;type\&quot;: \&quot;AUXILIAR\&quot;,\n            \&quot;recruiterId\&quot;: \&quot;${recruiterId}\&quot;\n        }\n    ]\n}&quot;,
-  &quot;contentType&quot;: &quot;application/json&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
-}</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
-      <type>Main</type>
-      <value>application/json</value>
-      <webElementGuid>611cc591-63d8-44a8-a6e9-c8a92fdb409a</webElementGuid>
-   </httpHeaderProperties>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
-      <value>Bearer ${GlobalVariable.TokenReclu}</value>
-      <webElementGuid>22644072-298c-46d9-8ff9-6acf02b3d3bc</webElementGuid>
+      <value>Bearer ${GlobalVariable.TokenCand}</value>
+      <webElementGuid>0c984e66-e99f-4f43-80ed-2e631e397430</webElementGuid>
    </httpHeaderProperties>
-   <katalonVersion>8.5.5</katalonVersion>
+   <katalonVersion>8.6.6</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://${url}.micros.involverh.com.mx/user/vacant/step6/${GlobalVariable.vacanteid}</restUrl>
+   <restUrl>https://pre.micros.involverh.com.mx/notification/session-aux/check-code-sms?code=${code}&amp;phone=5569777077</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -55,18 +43,18 @@
    <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>GlobalVariable.url</defaultValue>
+      <defaultValue>GlobalVariable.codigo</defaultValue>
       <description></description>
-      <id>3693b215-7df5-40a5-9eed-459a9afba458</id>
+      <id>a2300570-2226-4b85-baf6-7e76985b69a4</id>
       <masked>false</masked>
-      <name>url</name>
+      <name>code</name>
    </variables>
    <variables>
-      <defaultValue>GlobalVariable.recruiterId</defaultValue>
+      <defaultValue>GlobalVariable.url</defaultValue>
       <description></description>
-      <id>265d8b80-24f9-4b3b-b483-7daf4eafc2fa</id>
+      <id>9a6d7436-b0ab-4a35-89f8-3380762d530b</id>
       <masked>false</masked>
-      <name>recruiterId</name>
+      <name>url</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

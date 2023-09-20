@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>3.- Un reclurtador invita a otro para administrar un vacante</name>
+   <name>3.- Un reclutador invita a otro para administrar un vacante</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>

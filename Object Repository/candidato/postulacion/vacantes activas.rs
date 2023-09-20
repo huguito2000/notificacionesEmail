@@ -10,7 +10,7 @@
       <authorizationInfo>
          <entry>
             <key>bearerToken</key>
-            <value>${GlobalVariable.TokenReclu}</value>
+            <value>eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIwMDAwMDAwMDg4YjU1YWE4MDE4OGM1OGJjZDcxMDAyZiIsInN1YiI6Imh1Z3VpdG8ucmVjbHV0YWRvckB5b3BtYWlsLmNvbSIsImF1dGhvcml0aWVzIjpbIlJFQ1JVSVRFUl9BRE1JTiJdLCJpZCI6IjAwMDAwMDAwODhiNTVhYTgwMTg4YzU4YmNkNzEwMDJmIiwidXNlclJvbCI6IlJFQ1JVSVRFUl9BRE1JTiIsImVtYWlsVXNlciI6Imh1Z3VpdG8ucmVjbHV0YWRvckB5b3BtYWlsLmNvbSIsImtleVN5c3RlbSI6Ik1FWCIsImlhdCI6MTY5MTQyNDIyMywiZXhwIjoxNjkxNDM1MDIzfQ.hwkyvh7vYeNtTqH_8G6YeRmaVLhHbBuQSS2lbXRGPgLqs4cZcI0wQXCgsDwbbnxGFeEK1sDTskEgkYEr40pSGw</value>
          </entry>
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
@@ -26,14 +26,14 @@
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
-      <value>Bearer ${GlobalVariable.TokenReclu}</value>
-      <webElementGuid>a008632d-4735-4654-b11e-01af207909b3</webElementGuid>
+      <value>Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIwMDAwMDAwMDg4YjU1YWE4MDE4OGM1OGJjZDcxMDAyZiIsInN1YiI6Imh1Z3VpdG8ucmVjbHV0YWRvckB5b3BtYWlsLmNvbSIsImF1dGhvcml0aWVzIjpbIlJFQ1JVSVRFUl9BRE1JTiJdLCJpZCI6IjAwMDAwMDAwODhiNTVhYTgwMTg4YzU4YmNkNzEwMDJmIiwidXNlclJvbCI6IlJFQ1JVSVRFUl9BRE1JTiIsImVtYWlsVXNlciI6Imh1Z3VpdG8ucmVjbHV0YWRvckB5b3BtYWlsLmNvbSIsImtleVN5c3RlbSI6Ik1FWCIsImlhdCI6MTY5MTQyNDIyMywiZXhwIjoxNjkxNDM1MDIzfQ.hwkyvh7vYeNtTqH_8G6YeRmaVLhHbBuQSS2lbXRGPgLqs4cZcI0wQXCgsDwbbnxGFeEK1sDTskEgkYEr40pSGw</value>
+      <webElementGuid>851f3604-d138-48ae-8003-e9ac31a62795</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.5.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://${url}.micros.involverh.com.mx/user/vacant/admin?pageSize=5&amp;pageNumber=0&amp;sortBy=publicationDate&amp;sortDirection=DESC&amp;status=ACTIVA</restUrl>
+   <restUrl>${url}/user/vacant/admin?pageSize=5&amp;pageNumber=0&amp;sortBy=publicationDate&amp;sortDirection=DESC&amp;status=ACTIVA</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

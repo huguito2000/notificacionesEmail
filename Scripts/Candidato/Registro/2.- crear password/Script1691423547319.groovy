@@ -56,7 +56,7 @@ println(responseText)
 
 json = new JsonSlurper().parseText(responseText)
 
-json = json.user.checkCode
+json = json.data
 
 println(json)
 
@@ -64,15 +64,7 @@ GlobalVariable.codigo = json
 
 WS.verifyResponseStatusCode(response, 200)
 
-response = WS.sendRequest(findTestObject('candidato/registro/4.1 - telefono'))
-
-statusCode = WS.getResponseStatusCode(response)
-
-println(statusCode)
-
-WS.verifyResponseStatusCode(response, 200)
-
-response = WS.sendRequest(findTestObject('candidato/registro/4.2 - check email'))
+response = WS.sendRequest(findTestObject('candidato/registro/4.1- check code'))
 
 statusCode = WS.getResponseStatusCode(response)
 

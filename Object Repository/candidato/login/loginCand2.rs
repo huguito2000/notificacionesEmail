@@ -1,38 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>duplicar</name>
+   <name>loginCand2</name>
    <tag></tag>
-   <elementGuidId>a777276c-8ab5-4055-b35f-ea894d13bb61</elementGuidId>
+   <elementGuidId>5fd08f0b-f06e-4dde-9009-64a892ceba70</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <authorizationRequest>
-      <authorizationInfo>
-         <entry>
-            <key>bearerToken</key>
-            <value>${GlobalVariable.TokenReclu}</value>
-         </entry>
-      </authorizationInfo>
-      <authorizationType>Bearer</authorizationType>
-   </authorizationRequest>
+   <autoUpdateContent>false</autoUpdateContent>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent></httpBodyContent>
-   <httpBodyType></httpBodyType>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n    \&quot;email\&quot;: \&quot;${email}\&quot;,\n    \&quot;password\&quot;: \&quot;Abcd.1234\&quot;,\n    \&quot;userRol\&quot;: \&quot;CANDIDATE\&quot;\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>Authorization</name>
+      <name>Content-Type</name>
       <type>Main</type>
-      <value>Bearer ${GlobalVariable.TokenReclu}</value>
-      <webElementGuid>19751c0e-e0c5-4735-8b95-9e8e39017b2a</webElementGuid>
+      <value>application/json</value>
+      <webElementGuid>da488cc1-a51e-4f3c-a71e-79ffef3490e8</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.5.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://${url}.micros.involverh.com.mx/vacancy/management/duplicate-vacancy/${vacantId}</restUrl>
+   <restUrl>${url}/notification/login</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -44,16 +40,16 @@
    <variables>
       <defaultValue>GlobalVariable.url</defaultValue>
       <description></description>
-      <id>838bb2fa-163f-4e71-9568-05bcbf6b3972</id>
+      <id>457be20b-8c89-4385-a364-70ef5c0d57ae</id>
       <masked>false</masked>
       <name>url</name>
    </variables>
    <variables>
-      <defaultValue>GlobalVariable.vacantId</defaultValue>
+      <defaultValue>GlobalVariable.email</defaultValue>
       <description></description>
-      <id>57e8f18d-0c11-4bc6-8cdd-11df5cf30775</id>
+      <id>dd8fa621-39c8-44c4-8abf-02ce76f0af57</id>
       <masked>false</masked>
-      <name>vacantId</name>
+      <name>email</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

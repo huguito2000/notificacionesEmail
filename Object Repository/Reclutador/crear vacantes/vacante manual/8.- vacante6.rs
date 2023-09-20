@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>obtener cliente</name>
+   <name>8.- vacante6</name>
    <tag></tag>
-   <elementGuidId>c08c90e0-0d3d-47ab-a40f-53f2676cdce0</elementGuidId>
+   <elementGuidId>0cc37713-2685-478b-a3f3-3827d7edf158</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <authorizationRequest>
@@ -15,19 +15,23 @@
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
-   <autoUpdateContent>true</autoUpdateContent>
+   <autoUpdateContent>false</autoUpdateContent>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent></httpBodyContent>
-   <httpBodyType></httpBodyType>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n    \&quot;recruiters\&quot;: [\n        {\n            \&quot;Notifications\&quot;: true,\n            \&quot;type\&quot;: \&quot;AUXILIAR\&quot;,\n            \&quot;recruiterId\&quot;: \&quot;0000000088b55aa80188c58bcd71002f\&quot;\n        }\n    ]\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Content-Type</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>e3a95b18-089c-4d29-9908-c64d06baf10f</webElementGuid>
+      <webElementGuid>611cc591-63d8-44a8-a6e9-c8a92fdb409a</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -35,13 +39,13 @@
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${GlobalVariable.TokenReclu}</value>
-      <webElementGuid>3a5ce35d-4f82-4681-bb73-522d84f3db9f</webElementGuid>
+      <webElementGuid>22644072-298c-46d9-8ff9-6acf02b3d3bc</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.5.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://${url}.micros.involverh.com.mx/user/client</restUrl>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${url}/vacancy/management/step6/${GlobalVariable.vacanteid}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -51,25 +55,18 @@
    <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>GlobalVariable.TokenReclu</defaultValue>
-      <description></description>
-      <id>8f4b3b6c-a2eb-42f8-8a26-0d9d1e3a8c9f</id>
-      <masked>false</masked>
-      <name>Token</name>
-   </variables>
-   <variables>
       <defaultValue>GlobalVariable.url</defaultValue>
       <description></description>
-      <id>27599031-b44e-4a2a-8348-10e7b25a4711</id>
+      <id>3693b215-7df5-40a5-9eed-459a9afba458</id>
       <masked>false</masked>
       <name>url</name>
    </variables>
    <variables>
-      <defaultValue>GlobalVariable.empresa</defaultValue>
+      <defaultValue>GlobalVariable.recruiterId</defaultValue>
       <description></description>
-      <id>f7f9763f-743b-4c67-b993-9dc2b365b354</id>
+      <id>265d8b80-24f9-4b3b-b483-7daf4eafc2fa</id>
       <masked>false</masked>
-      <name>empresa</name>
+      <name>recruiterId</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

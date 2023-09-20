@@ -26,7 +26,7 @@ WebUI.callTestCase(findTestCase('Reclutador/login/login'), [:], FailureHandling.
 
 println('Inicia el test crear vacante')
 
-response = WS.sendRequest(findTestObject('Reclutador/crear vacantes/crear vacante'))
+response = WS.sendRequest(findTestObject('Reclutador/crear vacantes/vacante manual/1.- crear vacante'))
 
 responseText = response.getResponseText()
 
@@ -38,7 +38,7 @@ println(statusCode)
 
 response = WS.verifyResponseStatusCode(response, 200)
 
-response = WS.sendRequest(findTestObject('Reclutador/crear vacantes/obtener cliente'))
+response = WS.sendRequest(findTestObject('Reclutador/crear vacantes/vacante manual/2.- obtener cliente'))
 
 responseText = response.getResponseText()
 

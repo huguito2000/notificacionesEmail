@@ -66,7 +66,7 @@ if(salaryShow == 1) {
 println(GlobalVariable.confidencial )
 
 println(GlobalVariable.salarioShow)
-response = WS.sendRequest(findTestObject('Reclutador/crear vacantes/vacante1'))
+response = WS.sendRequest(findTestObject('Reclutador/crear vacantes/vacante manual/3.- vacante1'))
 
 statusCode = WS.getResponseStatusCode(response)
 

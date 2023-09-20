@@ -21,7 +21,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'pre'</initValue>
+      <initValue>'https://pre.micros.involverh.com.mx'</initValue>
       <name>url</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

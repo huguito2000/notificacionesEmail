@@ -31,7 +31,6 @@ println(responseText)
 
 WS.verifyResponseStatusCode(response, 200)
 
-
 WebUI.openBrowser('https://yopmail.com/es/wm')
 
 WebUI.setText(findTestObject('Generales/Cuenta Bloqueada/Campo Email'), 'huguito.reclutador')
@@ -43,3 +42,4 @@ WebUI.takeScreenshot('/Users/huguito/Desktop/notificaciones/Reclutador/pausadas.
 WebUI.delay(5)
 
 WebUI.closeBrowser()
+

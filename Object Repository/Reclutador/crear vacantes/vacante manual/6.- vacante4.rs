@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>vacante3</name>
+   <name>6.- vacante4</name>
    <tag></tag>
-   <elementGuidId>87b2ab05-e21b-4be9-ad1b-196e28867c8d</elementGuidId>
+   <elementGuidId>be294680-3d1c-48c0-ab88-56570b5ee194</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <authorizationRequest>
@@ -20,7 +20,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;academicTitle\&quot;: \&quot;ingeniero\&quot;,\n    \&quot;area\&quot;: [\n        {\n            \&quot;exclud\&quot;: false,\n            \&quot;area\&quot;: {\n                \&quot;areaId\&quot;: \&quot;40288087797b055a01797b12ab830007\&quot;\n            },\n            \&quot;yearExperience\&quot;: 3\n        }\n    ],\n    \&quot;hardSkill\&quot;: [\n        {\n            \&quot;level\&quot;: \&quot;AVANZADO\&quot;,\n            \&quot;skillId\&quot;: \&quot;2c9f93647d0ba197017d14ef1b830061\&quot;,\n            \&quot;exclud\&quot;: false\n        }\n    ],\n    \&quot;idEducation\&quot;: \&quot;402881cf79c889e50179c88feecf0004\&quot;,\n    \&quot;levelEducationExclud\&quot;: false,\n    \&quot;idStatusEducation\&quot;: \&quot;402880de79730a2c0179731b7c1b0003\&quot;,\n    \&quot;statusEducationExclud\&quot;: false,\n    \&quot;institution\&quot;: [\n        {\n            \&quot;idInstitution\&quot;: \&quot;000000008878999b01888c7c40580010\&quot;\n        }\n    ],\n    \&quot;language\&quot;: [],\n    \&quot;softSkill\&quot;: [\n        {\n            \&quot;skillId\&quot;: \&quot;0000000088c520440188d5ce7c2d00fb\&quot;\n        }\n    ],\n    \&quot;speciality\&quot;: [\n        {\n            \&quot;exclud\&quot;: false,\n            \&quot;speciality\&quot;: {\n                \&quot;specialtyId\&quot;: \&quot;40288087797b055a01797b3703990021\&quot;\n            },\n            \&quot;yearExperience\&quot;: 3\n        }\n    ]\n}&quot;,
+  &quot;text&quot;: &quot;{\n    \&quot;newQuestions\&quot;: [\n        {\n            \&quot;question\&quot;: \&quot;¿sabes automatizar?\&quot;,\n            \&quot;type\&quot;: \&quot;AREA_SPECIALTY\&quot;,\n            \&quot;typeQuestion\&quot;: \&quot;CERRADA\&quot;,\n            \&quot;isArmed\&quot;: false,\n            \&quot;exclud\&quot;: false,\n            \&quot;typeAnswer\&quot;: true\n        }\n    ]\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -31,7 +31,7 @@
       <name>Content-Type</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>e1daf8e6-3eaa-465c-afb5-f08dfbca460f</webElementGuid>
+      <webElementGuid>e0ebe77b-6cf3-4865-9461-4fc92be42888</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -39,13 +39,13 @@
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${GlobalVariable.TokenReclu}</value>
-      <webElementGuid>a5531e18-b303-4f2b-999a-3f16be1dfda5</webElementGuid>
+      <webElementGuid>61001f6b-259f-496f-824e-429a14694043</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.5.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://${url}.micros.involverh.com.mx/user/vacant/step3/${GlobalVariable.vacanteid}</restUrl>
+   <restUrl>${url}/vacancy/management/step4/${GlobalVariable.vacanteid}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -57,7 +57,7 @@
    <variables>
       <defaultValue>GlobalVariable.url</defaultValue>
       <description></description>
-      <id>7c6fa9fa-08d5-4359-aa62-73e0f5698e03</id>
+      <id>eaec20b9-1620-4809-9bf1-a321efd058d4</id>
       <masked>false</masked>
       <name>url</name>
    </variables>

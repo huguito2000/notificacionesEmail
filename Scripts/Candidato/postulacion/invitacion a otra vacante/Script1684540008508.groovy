@@ -17,7 +17,7 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Reclutador/login/login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-response = WS.sendRequest(findTestObject('preubas/invitacion a otra vacante prueba'))
+response = WS.sendRequest(findTestObject('Reclutador/postulacion/invitacion a otra vacante'))
 
 statusCode = WS.getResponseStatusCode(response)
 

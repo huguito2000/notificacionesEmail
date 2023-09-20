@@ -30,7 +30,7 @@ WebUI.callTestCase(findTestCase('Reclutador/login/login'), [:], FailureHandling.
 
 vacantId = []
 
-response = WS.sendRequest(findTestObject('candidato/postulacion/vacantes activas'))
+response = WS.sendRequest(findTestObject('Reclutador/vacantes/activas/vacantes activas'))
 
 statusCode = WS.getResponseStatusCode(response)
 
@@ -52,7 +52,6 @@ vacantId = json
 
 println(vacantId)
 
-
 RN = json.size()
 
 println(RN)
@@ -67,6 +66,7 @@ println(GlobalVariable.vacantId)
 
 def aleatoreo() {
     rn = ((Math.random() * RN) as int)
-	println(rn) 
+
+    println(rn)
 }
 

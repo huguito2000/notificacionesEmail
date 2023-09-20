@@ -15,6 +15,7 @@
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
+   <autoUpdateContent>true</autoUpdateContent>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
@@ -32,7 +33,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://pre.micros.involverh.com.mx/files/upload/interview-video-web?pathVideo=https://s3.us-east-1.amazonaws.com/video-detection-pre/SELECTION_PROCESS/2c9f93648820aca101882abad0810096/URL_INTERVIEW_VIDEO_1684436653298.mp4&amp;selectionProcessId=${GlobalVariable.postulacionId}</restUrl>
+   <restUrl>${url}/files/upload/interview-video-web?pathVideo=https://s3.us-east-1.amazonaws.com/video-detection-pre/SELECTION_PROCESS/2c9f93648820aca101882abad0810096/URL_INTERVIEW_VIDEO_1684436653298.mp4&amp;selectionProcessId=${GlobalVariable.postulacionId}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

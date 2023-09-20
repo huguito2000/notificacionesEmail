@@ -33,7 +33,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>DELETE</restRequestMethod>
-   <restUrl>https://${url}.micros.involverh.com.mx/management/dashboard/users/delete-by-email?email=${email}&amp;sendNotification=true</restUrl>
+   <restUrl>${url}/management/dashboard/users/delete-by-email?email=${email}&amp;sendNotification=true</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

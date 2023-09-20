@@ -26,7 +26,7 @@ import com.kms.katalon.core.testobject.ResponseObject as ResponseObject
 
 WebUI.callTestCase(findTestCase('reclutador/crear vacante/4.- vacante2'), [:], FailureHandling.STOP_ON_FAILURE)
 
-response = WS.sendRequest(findTestObject('reclutador/crear vacantes/vacante3'))
+response = WS.sendRequest(findTestObject('Reclutador/crear vacantes/vacante manual/5.- vacante3'))
 
 statusCode = WS.getResponseStatusCode(response)
 

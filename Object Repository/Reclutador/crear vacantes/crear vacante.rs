@@ -15,7 +15,8 @@
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
-   <connectionTimeout>0</connectionTimeout>
+   <autoUpdateContent>true</autoUpdateContent>
+   <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent></httpBodyContent>
@@ -34,20 +35,20 @@
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${GlobalVariable.TokenReclu}</value>
-      <webElementGuid>3a5ce35d-4f82-4681-bb73-522d84f3db9f</webElementGuid>
+      <webElementGuid>fa8868c6-08f3-402e-9283-ab12e10c2708</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.5.5</katalonVersion>
-   <maxResponseSize>0</maxResponseSize>
+   <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://${url}.micros.involverh.com.mx/recruiter/company/${empresa}</restUrl>
+   <restUrl>https://pre.micros.involverh.com.mx/recruiter/company/${empresa}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceEndpoint></soapServiceEndpoint>
    <soapServiceFunction></soapServiceFunction>
-   <socketTimeout>0</socketTimeout>
+   <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
       <defaultValue>GlobalVariable.TokenReclu</defaultValue>

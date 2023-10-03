@@ -64,9 +64,9 @@ clienteID  = clienteID.replace(']', '')
 
 println(clienteID)
 
-GlobalVariable.clientId = clienteID
+GlobalVariable.clienteId = clienteID
 
-println(GlobalVariable.clientId)
+println(GlobalVariable.clienteId)
 def puestos() {
     puestos = ['Administración y gestión de empresas', 'Contabilidad y fiscalización', 'Finanzas", "banca y seguros', 'Negocios y administración, programas multidisciplinarios o generales'
         , 'Negocios y comercio', 'Ciencias políticas', 'Economía', 'Psicología', 'Sociología y antropología', 'Trabajo y atención social'

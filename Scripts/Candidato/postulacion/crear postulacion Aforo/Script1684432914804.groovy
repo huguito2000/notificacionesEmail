@@ -154,8 +154,9 @@ println(GlobalVariable.questionId0)
 GlobalVariable.questionId1 = (codigo[1])
 
 println(GlobalVariable.questionId1)
+/*
   
- response = WS.sendRequest(findTestObject('candidato/postulacion/postulacion 3'))
+response = WS.sendRequest(findTestObject('candidato/postulacion/postulacion 3'))
 
 statusCode = WS.getResponseStatusCode(response)
 
@@ -168,6 +169,8 @@ println(responseText)
 WS.verifyResponseStatusCode(response, 200) 
 
 /*
+ * 
+ */
 response = WS.sendRequest(findTestObject('candidato/postulacion/video entrevista'))
 
 statusCode = WS.getResponseStatusCode(response)
@@ -199,7 +202,6 @@ WebUI.delay(3)
 
 WebUI.closeBrowser()
 
-*/
 
 def experiencia() {
     experiencia = ((Math.random() * 60) as int)

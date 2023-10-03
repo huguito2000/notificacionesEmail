@@ -10,7 +10,7 @@
       <authorizationInfo>
          <entry>
             <key>bearerToken</key>
-            <value>eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIwMDAwMDAwMDg4YjU1YWE4MDE4OGM1OGJjZDcxMDAyZiIsInN1YiI6Imh1Z3VpdG8ucmVjbHV0YWRvckB5b3BtYWlsLmNvbSIsImF1dGhvcml0aWVzIjpbIlJFQ1JVSVRFUl9BRE1JTiJdLCJpZCI6IjAwMDAwMDAwODhiNTVhYTgwMTg4YzU4YmNkNzEwMDJmIiwidXNlclJvbCI6IlJFQ1JVSVRFUl9BRE1JTiIsImVtYWlsVXNlciI6Imh1Z3VpdG8ucmVjbHV0YWRvckB5b3BtYWlsLmNvbSIsImtleVN5c3RlbSI6Ik1FWCIsImlhdCI6MTY5MTQyNDIyMywiZXhwIjoxNjkxNDM1MDIzfQ.hwkyvh7vYeNtTqH_8G6YeRmaVLhHbBuQSS2lbXRGPgLqs4cZcI0wQXCgsDwbbnxGFeEK1sDTskEgkYEr40pSGw</value>
+            <value>${GlobalVariable.TokenCand}</value>
          </entry>
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
@@ -26,8 +26,8 @@
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
-      <value>Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIwMDAwMDAwMDg4YjU1YWE4MDE4OGM1OGJjZDcxMDAyZiIsInN1YiI6Imh1Z3VpdG8ucmVjbHV0YWRvckB5b3BtYWlsLmNvbSIsImF1dGhvcml0aWVzIjpbIlJFQ1JVSVRFUl9BRE1JTiJdLCJpZCI6IjAwMDAwMDAwODhiNTVhYTgwMTg4YzU4YmNkNzEwMDJmIiwidXNlclJvbCI6IlJFQ1JVSVRFUl9BRE1JTiIsImVtYWlsVXNlciI6Imh1Z3VpdG8ucmVjbHV0YWRvckB5b3BtYWlsLmNvbSIsImtleVN5c3RlbSI6Ik1FWCIsImlhdCI6MTY5MTQyNDIyMywiZXhwIjoxNjkxNDM1MDIzfQ.hwkyvh7vYeNtTqH_8G6YeRmaVLhHbBuQSS2lbXRGPgLqs4cZcI0wQXCgsDwbbnxGFeEK1sDTskEgkYEr40pSGw</value>
-      <webElementGuid>851f3604-d138-48ae-8003-e9ac31a62795</webElementGuid>
+      <value>Bearer ${GlobalVariable.TokenCand}</value>
+      <webElementGuid>68ebbc88-ff1b-46a6-9ee4-e8f4f572d2c7</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.5.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>

@@ -11,4 +11,11 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>765b51a5-e827-494b-bc93-6f8d3a9ffcda</testSuiteGuid>
+   <testCaseLink>
+      <guid>e9dc40e2-1084-498c-b269-79779d6c3c73</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Reclutador/vacantes/pausada</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

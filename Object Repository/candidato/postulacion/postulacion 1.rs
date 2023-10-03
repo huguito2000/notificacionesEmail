@@ -3,7 +3,7 @@
    <description></description>
    <name>postulacion 1</name>
    <tag></tag>
-   <elementGuidId>e9b003bc-bd34-4246-b69a-f35e9a911573</elementGuidId>
+   <elementGuidId>6a62d6a0-b92d-4380-9db9-6a3f42deb1c6</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <authorizationRequest>
@@ -15,6 +15,7 @@
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
+   <autoUpdateContent>true</autoUpdateContent>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
@@ -34,13 +35,13 @@
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${GlobalVariable.TokenCand}</value>
-      <webElementGuid>b2003164-adb8-41a7-91a1-2ab33802614a</webElementGuid>
+      <webElementGuid>bbc1bf5c-2d8e-4428-a860-6f342af32e18</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.5.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://${url}.micros.involverh.com.mx/candidate/candidate/postulation?vacantId=${vacantId}</restUrl>
+   <restUrl>${url}/user/candidate/postulation?vacantId=${vacantId}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Reclutador/vacantes/vacantes activas'), [:], FailureHandling.STOP_ON_FAILURE)
 
-response = WS.sendRequest(findTestObject('Reclutador/crear vacantes/duplicar'))
+response = WS.sendRequest(findTestObject('Reclutador/crear vacantes/vacante manual/duplicar'))
 
 statusCode = WS.getResponseStatusCode(response)
 

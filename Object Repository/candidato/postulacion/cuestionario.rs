@@ -3,7 +3,7 @@
    <description></description>
    <name>cuestionario</name>
    <tag></tag>
-   <elementGuidId>54517a4b-d6fd-487f-a0a2-91ce84f26de3</elementGuidId>
+   <elementGuidId>13f47cfb-dc4a-4bcd-aa56-025033d45e3f</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <authorizationRequest>
@@ -15,6 +15,7 @@
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
+   <autoUpdateContent>true</autoUpdateContent>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
@@ -32,7 +33,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://${url}.micros.involverh.com.mx/candidate/candidate/postulation/question?page=0&amp;processId=${GlobalVariable.postulacionId}&amp;questionnaire=AREA_SPECIALTY&amp;size=100</restUrl>
+   <restUrl>${url}/user/candidate/postulation/question?page=0&amp;processId=${GlobalVariable.postulacionId}&amp;questionnaire=AREA_SPECIALTY&amp;size=100</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

@@ -48,7 +48,7 @@ api = api.replace('Bearer ', '')
 
 println(api)
 
-GlobalVariable.TokenCand = api
+GlobalVariable.TokenReclu = api
 
 WebUI.openBrowser('https://yopmail.com/es/wm')
 

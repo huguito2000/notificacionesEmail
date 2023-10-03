@@ -21,7 +21,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'pre'</initValue>
+      <initValue>'https://pre.micros.involverh.com.mx'</initValue>
       <name>url</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -143,5 +143,10 @@
       <description></description>
       <initValue>''</initValue>
       <name>NivelAcademico</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>clienteId</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

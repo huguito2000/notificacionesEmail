@@ -15,6 +15,7 @@
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
+   <autoUpdateContent>false</autoUpdateContent>
    <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
@@ -24,7 +25,7 @@
   &quot;parameters&quot;: [
     {
       &quot;name&quot;: &quot;file&quot;,
-      &quot;value&quot;: &quot;/Users/huguito/Desktop/CV CarlosG.pdf&quot;,
+      &quot;value&quot;: &quot;/Users/huguito/Downloads/carlos cv.pdf&quot;,
       &quot;type&quot;: &quot;File&quot;,
       &quot;contentType&quot;: &quot;application/pdf&quot;
     }
@@ -51,7 +52,7 @@
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://${url}.micros.involverh.com.mx/files/upload/uploadFile?typeFile=URL_CV</restUrl>
+   <restUrl>${url}/files/upload/uploadFile?typeFile=URL_CV</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

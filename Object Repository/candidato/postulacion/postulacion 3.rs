@@ -3,7 +3,7 @@
    <description></description>
    <name>postulacion 3</name>
    <tag></tag>
-   <elementGuidId>8b3933cb-2103-464a-b959-f18896a3571b</elementGuidId>
+   <elementGuidId>f5d7a826-1e23-4ebc-8a6b-83d13729d170</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <authorizationRequest>
@@ -15,11 +15,12 @@
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
+   <autoUpdateContent>false</autoUpdateContent>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;[\n    {\n        \&quot;question\&quot;: {\n            \&quot;questionId\&quot;: \&quot;2c9f936488202b9f0188215bbce800da\&quot;\n        },\n        \&quot;binaryAnswer\&quot;: null,\n        \&quot;levelHardSkill\&quot;: \&quot;${GlobalVariable.habilidad_dura}\&quot;,\n        \&quot;openAnswer\&quot;: null,\n        \&quot;yearsExperienceAnswer\&quot;: null\n    }\n]&quot;,
+  &quot;text&quot;: &quot;[\n    {\n        \&quot;question\&quot;: {\n            \&quot;questionId\&quot;: \&quot;ff8080818aae7a4a018aaee10394001c\&quot;\n        },\n        \&quot;binaryAnswer\&quot;: null,\n        \&quot;levelHardSkill\&quot;: \&quot;AVANZADO\&quot;,\n        \&quot;openAnswer\&quot;: null,\n        \&quot;yearsExperienceAnswer\&quot;: null\n    }\n]&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -38,13 +39,13 @@
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${GlobalVariable.TokenCand}</value>
-      <webElementGuid>94b8cb15-c4c5-418c-a6f5-06cb93da3100</webElementGuid>
+      <webElementGuid>54bc57ed-7e28-4256-b531-c613b83e3cd8</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.5.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://${url}.micros.involverh.com.mx/candidate/candidate/postulation/answer?processId=${GlobalVariable.postulacionId}&amp;questionnaire=HARD_SKILL</restUrl>
+   <restUrl>${url}/user/candidate/postulation/answer?processId=${GlobalVariable.postulacionId}&amp;questionnaire=HARD_SKILL</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

@@ -20,41 +20,39 @@ import groovy.json.JsonOutput as JsonOutput
 import groovy.json.JsonSlurper as JsonSlurper
 import com.kms.katalon.core.testobject.ResponseObject as ResponseObject
 
-WebUI.callTestCase(findTestCase('Candidato/Registro/formulario 2'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Candidato/Registro/4.- formulario 2'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Reclutador/vacantes/vacantes activas'), [:], FailureHandling.STOP_ON_FAILURE)
-
-statusCode = 0
+//statusCode = 0
 experiencia = 0
-
-println('el nivel de experiencia es')
 
 nivelExperiencia()
 
-response = WS.sendRequest(findTestObject('candidato/postulacion/postulacion 1'))
-
-statusCode = WS.getResponseStatusCode(response)
-
-println(statusCode)
-
-responseText = response.getResponseText()
-
-println(responseText)
-
-while (statusCode !=200) {
-	
 WebUI.callTestCase(findTestCase('Reclutador/vacantes/vacantes activas'), [:], FailureHandling.STOP_ON_FAILURE)
+
+println(GlobalVariable.vacantId)
+
 response = WS.sendRequest(findTestObject('candidato/postulacion/postulacion 1'))
 
 statusCode = WS.getResponseStatusCode(response)
 
-responseText = response.getResponseText()
-
-println(responseText)
-
 println(statusCode)
 
-WebUI.delay(5)
+while (statusCode != 200) {
+    WebUI.callTestCase(findTestCase('Reclutador/vacantes/vacantes activas'), [:], FailureHandling.STOP_ON_FAILURE)
+
+    response = WS.sendRequest(findTestObject('candidato/postulacion/postulacion 1'))
+
+    println(GlobalVariable.vacantId)
+
+    statusCode = WS.getResponseStatusCode(response)
+
+    responseText = response.getResponseText()
+
+    println(responseText)
+
+    println(statusCode)
+
+    WebUI.delay(5)
 }
 
 WS.verifyResponseStatusCode(response, 200)
@@ -87,17 +85,17 @@ codigo = json.sort()
 
 println(codigo)
 
-println(codigo[0])
-
 GlobalVariable.questionId0 = (codigo[0])
 
-println(codigo[1])
+println(codigo[0])
 
 GlobalVariable.questionId1 = (codigo[1])
 
-println(codigo[2])
+println(codigo[1])
 
 GlobalVariable.questionId2 = (codigo[2])
+
+println(codigo[2])
 
 experiencia()
 
@@ -107,18 +105,57 @@ GlobalVariable.experiencia = experiencia
 
 println('estos son los años ' + GlobalVariable.experiencia)
 
+WS.verifyResponseStatusCode(response, 200)
+
 response = WS.sendRequest(findTestObject('candidato/postulacion/postulacion 2'))
 
 statusCode = WS.getResponseStatusCode(response)
 
 println(statusCode)
 
+WS.verifyResponseStatusCode(response, 200)
+
 responseText = response.getResponseText()
 
 println(responseText)
 
-WS.verifyResponseStatusCode(response, 200)
+response = WS.sendRequest(findTestObject('candidato/postulacion/HS'))
 
+statusCode = WS.getResponseStatusCode(response)
+
+responseText = response.getResponseText()
+
+println(responseText)
+
+json = new JsonSlurper().parseText(responseText)
+
+json = json.content.questionId
+
+println(json)
+
+println(json.size())
+
+codigo = json.sort()
+
+println(statusCode)
+
+/*String s = json.sort()
+
+
+String codigo = s.replace('[', '')
+
+codigo = codigo.replace(']', '')
+
+println(codigo)*/
+GlobalVariable.questionId0 = (codigo[0])
+
+println(GlobalVariable.questionId0)
+
+GlobalVariable.questionId1 = (codigo[1])
+
+println(GlobalVariable.questionId1)
+/*
+  
 response = WS.sendRequest(findTestObject('candidato/postulacion/postulacion 3'))
 
 statusCode = WS.getResponseStatusCode(response)
@@ -129,14 +166,47 @@ responseText = response.getResponseText()
 
 println(responseText)
 
+WS.verifyResponseStatusCode(response, 200) 
+
+/*
+ * 
+ */
+response = WS.sendRequest(findTestObject('candidato/postulacion/video entrevista'))
+
+statusCode = WS.getResponseStatusCode(response)
+
+println(statusCode)
+
 WS.verifyResponseStatusCode(response, 200)
 
-responseText = response.getResponseText()
+response = WS.sendRequest(findTestObject('Reclutador/postulacion/finalista'))
 
-println(responseText)
+statusCode = WS.getResponseStatusCode(response)
+
+println(statusCode)
+
+WS.verifyResponseStatusCode(response, 200)
+
+
+WebUI.openBrowser('https://yopmail.com/es/wm')
+
+WebUI.setText(findTestObject('Generales/Cuenta Bloqueada/Campo Email'), 'huguito.candidato')
+
+WebUI.sendKeys(findTestObject('Generales/Cuenta Bloqueada/Campo Email'), Keys.chord(Keys.ENTER))
+
+WebUI.delay(1)
+
+WebUI.takeScreenshot('/Users/huguito/Desktop/notificaciones/Candidato/finalista.png')
+
+WebUI.delay(3)
+
+WebUI.closeBrowser()
+
 
 def experiencia() {
     experiencia = ((Math.random() * 60) as int)
+
+    println(experiencia)
 }
 
 def nivelExperiencia() {

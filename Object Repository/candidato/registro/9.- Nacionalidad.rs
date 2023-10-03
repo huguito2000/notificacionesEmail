@@ -15,11 +15,12 @@
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
+   <autoUpdateContent>false</autoUpdateContent>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;[\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/steepsOnboarding\&quot;,\n        \&quot;value\&quot;: \&quot;5\&quot;\n    },\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/nacionality\&quot;,\n        \&quot;value\&quot;: {\n            \&quot;nationalityId\&quot;: \&quot;40288086796ba27001796bbcf9770000\&quot;,\n            \&quot;spanishName\&quot;: \&quot;Mexicana\&quot;,\n            \&quot;englishName\&quot;: \&quot;Mexican\&quot;\n        }\n    }\n]&quot;,
+  &quot;text&quot;: &quot;[\n    {\n        \&quot;op\&quot;: \&quot;replace\&quot;,\n        \&quot;path\&quot;: \&quot;/nacionality\&quot;,\n        \&quot;value\&quot;: {\n            \&quot;nationalityId\&quot;: \&quot;40288086796ba27001796bbcf9700\&quot;,\n            \&quot;spanishName\&quot;: \&quot;Mexicana\&quot;\n        }\n    }\n]&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -44,7 +45,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>PATCH</restRequestMethod>
-   <restUrl>https://${url}.micros.involverh.com.mx/candidate/candidate</restUrl>
+   <restUrl>${url}/user/candidate</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

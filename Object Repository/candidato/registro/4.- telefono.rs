@@ -15,6 +15,7 @@
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
+   <autoUpdateContent>true</autoUpdateContent>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
@@ -26,13 +27,13 @@
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${GlobalVariable.TokenCand}</value>
-      <webElementGuid>e2a9ceb3-3120-436c-ac2d-a9dbcbd5d89e</webElementGuid>
+      <webElementGuid>0e0e9a96-1848-4418-84e6-951a82aaa60d</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.5.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://${url}.micros.involverh.com.mx/notification/verify/send-sms?phone=+525569777077</restUrl>
+   <restUrl>${url}/notification/session-aux/send-sms?phone=5569777077</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

@@ -3,7 +3,7 @@
    <description></description>
    <name>postulacion 2</name>
    <tag></tag>
-   <elementGuidId>09d28d00-363b-4019-bebd-20f9610c26df</elementGuidId>
+   <elementGuidId>3fc5fa02-2dff-407e-983a-10d6b7f802f6</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <authorizationRequest>
@@ -15,11 +15,12 @@
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
+   <autoUpdateContent>false</autoUpdateContent>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;[\n    {\n        \&quot;question\&quot;: {\n            \&quot;questionId\&quot;: \&quot;${GlobalVariable.questionId0}\&quot;\n        },\n        \&quot;binaryAnswer\&quot;: null,\n        \&quot;levelHardSkill\&quot;: null,\n        \&quot;openAnswer\&quot;: null,\n        \&quot;yearsExperienceAnswer\&quot;: ${GlobalVariable.experiencia}\n    },\n    {\n        \&quot;question\&quot;: {\n            \&quot;questionId\&quot;: \&quot;${GlobalVariable.questionId1}\&quot;\n        },\n        \&quot;binaryAnswer\&quot;: null,\n        \&quot;levelHardSkill\&quot;: null,\n        \&quot;openAnswer\&quot;: null,\n        \&quot;yearsExperienceAnswer\&quot;: ${GlobalVariable.experiencia}\n    },\n    {\n        \&quot;question\&quot;: {\n            \&quot;questionId\&quot;: \&quot;${GlobalVariable.questionId2}\&quot;\n        },\n        \&quot;binaryAnswer\&quot;: false,\n        \&quot;levelHardSkill\&quot;: null,\n        \&quot;openAnswer\&quot;: null,\n        \&quot;yearsExperienceAnswer\&quot;: null\n    }\n]&quot;,
+  &quot;text&quot;: &quot;[\n    {\n        \&quot;question\&quot;: {\n            \&quot;questionId\&quot;: \&quot;${GlobalVariable.questionId0}\&quot;\n        },\n        \&quot;binaryAnswer\&quot;: null,\n        \&quot;levelHardSkill\&quot;: null,\n        \&quot;openAnswer\&quot;: null,\n        \&quot;yearsExperienceAnswer\&quot;: ${GlobalVariable.experiencia}\n    },\n    {\n        \&quot;question\&quot;: {\n            \&quot;questionId\&quot;: \&quot;${GlobalVariable.questionId1}\&quot;\n        },\n        \&quot;binaryAnswer\&quot;: null,\n        \&quot;levelHardSkill\&quot;: null,\n        \&quot;openAnswer\&quot;: null,\n        \&quot;yearsExperienceAnswer\&quot;: ${GlobalVariable.experiencia}\n    },\n    {\n        \&quot;question\&quot;: {\n            \&quot;questionId\&quot;: \&quot;ff8080818aae7a4a018aaee10394001d\&quot;\n        },\n        \&quot;binaryAnswer\&quot;: true,\n        \&quot;levelHardSkill\&quot;: null,\n        \&quot;openAnswer\&quot;: null,\n        \&quot;yearsExperienceAnswer\&quot;: null\n    }\n]&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -38,13 +39,13 @@
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${GlobalVariable.TokenCand}</value>
-      <webElementGuid>a8cab71e-3471-451b-b63e-f40df8ddcab1</webElementGuid>
+      <webElementGuid>33c4ddb4-3e4a-40ae-8e19-29a79fbe5db3</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.5.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://${url}.micros.involverh.com.mx/candidate/candidate/postulation/answer?processId=${GlobalVariable.postulacionId}&amp;questionnaire=EXPERIENCE</restUrl>
+   <restUrl>${url}/user/candidate/postulation/answer?processId=${GlobalVariable.postulacionId}&amp;questionnaire=EXPERIENCE</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
